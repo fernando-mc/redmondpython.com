@@ -19,6 +19,10 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
   name = "STEP 2 - Check Setup"
   url = "/setupcheckoff"
 
+[[menu.navbar]]
+  name = "Machine Setup"
+  url = "/setup"
+
 # custom navbar menu entry.   See the custom_navbar parameter below for
 # details.
 
@@ -26,7 +30,7 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
   author = "Fernando Medina Corey"
   description = "An free and open Python workshop."
   date_format = "Mon Jan 02, 2006"
-  custom_navbar = false
+  custom_navbar = true
 
   # Disable the use of sub-resource integrity on CSS/JS assets
   # Useful if you're using a CDN or other host where you can't control cache headers
