@@ -29,10 +29,16 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
   url = "/day_two_lesson"
 
 
-
 [[menu.navbar]]
   name = "Machine Setup"
   url = "/setup"
+[[menu.navbar]]
+  name = "2-Day Workshop"
+  url = "/day_one_lesson"
+[[menu.navbar]]
+  name = "Short Workshop"
+  url = "/day_one_lesson"
+
 
 # custom navbar menu entry.   See the custom_navbar parameter below for
 # details.

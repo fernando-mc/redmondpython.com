@@ -1,9 +1,14 @@
 ---
 layout: page
-title: projects
+title: Projects
 ---
 
 Download these projects as part of the workshop curriculum.
+
+
+**Sparrow**
+
+Build a Twitter bot that Tweets things out for you, you can even deploy it to an [Infrastructure as a Service](https://github.com/fernando-mc/sparrow) provider like AWS. Here is a [comprehensive walkthrough](https://www.fernandomc.com/posts/sparrow-python-twitter-bot-shell-aws-lambda/). 
 
 **Wordplay**
 
