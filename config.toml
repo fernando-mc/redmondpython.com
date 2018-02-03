@@ -13,11 +13,22 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
   post = "/:filename"
 
 [[menu.sidebar]]
-  name = "STEP 1 - Setup"
+  name = "1. Machine Setup Steps"
   url = "/setup"
 [[menu.sidebar]]
-  name = "STEP 2 - Check Setup"
-  url = "/setupcheckoff"
+  name = "2. Practice"
+  url = "/practice"
+[[menu.sidebar]]
+  name = "3. Projects"
+  url = "/projects"
+[[menu.sidebar]]
+  name = "4. Full Workshop - Day 1"
+  url = "/day_one_lesson"
+[[menu.sidebar]]
+  name = "5. Full Workshop - Day 2"
+  url = "/day_two_lesson"
+
+
 
 [[menu.navbar]]
   name = "Machine Setup"

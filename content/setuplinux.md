@@ -132,4 +132,4 @@ Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwa
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 # Checkoff
-Have an instructor or assistant [check you off](/fridaycheckoff/).
+Have an instructor or assistant [check you off](/setupcheckoff/).

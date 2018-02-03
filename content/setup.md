@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Machine Setup
 permalink: /setup/
 ---
