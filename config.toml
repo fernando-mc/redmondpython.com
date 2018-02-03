@@ -1,0 +1,42 @@
+# Hugo variables
+#
+baseurl = "https://open-python-workshop.surge.sh/"
+languageCode = "en-us"
+title = "Open Python Workshop"
+theme = "hugo-theme-bootstrap4-blog"
+# number of posts to show on home/category/tag pages (Default: 10)
+paginate = 5
+copyright = "This workshop was initially created by [Philly's Python User Group](http://phillypythonworkshop.github.io/) and adapted by the [Redmond Python User Group](https://www.meetup.com/Redmond-Python-User-Group/)."
+
+[permalinks]
+  posts = "/:filename"
+  post = "/:filename"
+
+[[menu.sidebar]]
+  name = "STEP 1 - Setup"
+  url = "/setup"
+[[menu.sidebar]]
+  name = "STEP 2 - Check Setup"
+  url = "/setupcheckoff"
+
+# custom navbar menu entry.   See the custom_navbar parameter below for
+# details.
+
+[params]
+  author = "Fernando Medina Corey"
+  description = "An free and open Python workshop."
+  date_format = "Mon Jan 02, 2006"
+  custom_navbar = false
+
+  # Disable the use of sub-resource integrity on CSS/JS assets
+  # Useful if you're using a CDN or other host where you can't control cache headers
+  disable_sri = false
+
+  [params.sidebar]
+    about = "Adapted from the [Philly PUG's workshop](http://phillypythonworkshop.github.io/)."
+
+    # How many posts to show on the sidebar (Default: 5)
+    num_recent_posts = 3
+
+  [params.social]
+    twitter = "fmc_sea"
