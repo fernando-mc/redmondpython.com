@@ -73,6 +73,7 @@ Order of operations works just like you may have learned in math class - Multipl
 There's a helpful function (more on what a function is later) called `type` that tells you what kind of thing -- what data type -- Python thinks something is. We can check for ourselves that Python considers '1' and '1.0' to be different data types:
 
 `type(1)`
+
 `type(1.0)`
 
 So now we've seen two data types: *integers* and *floats*.  We'll see more data types as we work through the lesson.

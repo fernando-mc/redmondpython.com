@@ -2,7 +2,7 @@
 #
 baseurl = "https://open-python-workshop.surge.sh/"
 languageCode = "en-us"
-title = "Open Python Workshop"
+title = "Redmond Python"
 theme = "hugo-theme-bootstrap4-blog"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
@@ -37,7 +37,7 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
   url = "/day_one_lesson"
 [[menu.navbar]]
   name = "Short Workshop"
-  url = "/day_one_lesson"
+  url = "/short_workshop"
 
 
 # custom navbar menu entry.   See the custom_navbar parameter below for
@@ -45,7 +45,7 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 
 [params]
   author = "Fernando Medina Corey"
-  description = "An free and open Python workshop."
+  description = "The Python User Group of Redmond, WA"
   date_format = "Mon Jan 02, 2006"
   custom_navbar = true
 
