@@ -12,7 +12,7 @@ Yay!
 <!--more-->
 
 1. We'll start by getting to know one another a little bit. I have a _few_ snacks but we're still looking for sponsorship so I can't provide actual dinner yet, sorry!.
-2. When enough people arrive we'll chat briefly as a group and see what people would like to do in the future. Some possibilites might include: lightning talks on cool projects, building projects together, or full length workshops (8-12 hours on Friday/Saturday).
+2. When enough people arrive we'll chat briefly as a group and see what people would like to do in the future. Some possibilities might include: lightning talks on cool projects, building projects together, or full length workshops (8-12 hours on Friday/Saturday).
 3. I'll make a brief plea to anyone who knows of spaces we can use or a company who might be willing to sponsor us.
 4. Then, for the majority of the night, we'll break out into groups of relative skill levels to learn Python! 
 
