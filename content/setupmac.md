@@ -2,9 +2,7 @@
 title: Setup - Mac
 ---
 
-While Macs come with Python 2.7.x pre-installed, we'll be working with Python 3 during this session so there's some light installation ahead of us. This will require administrative priveleges to your computer since the Python installation is usually done to protected directories.
-
-Along the way, we'll also set up a more advanced text editor that will help us by providing some really specific programming features.
+While Macs come with Python 2.7.x pre-installed, but because Python 2's end-of-life is just around the corner, we'll be working with Python 3 during this session so there's some light installation ahead of us. This will require administrative priveleges on your computer since the Python installation is usually done to protected directories. Along the way, we'll also set up a more advanced text editor that will help us by providing some really specific programming features.
 
 # Installing Python 3.6 for Mac
 
@@ -20,16 +18,16 @@ To install Python 3 for Mac:
 You can test that your installation went well by running the `python3` interpreter in the `Terminal`. 
 
 Enter the following into the terminal and press `enter`:
-
+~~~
     python3
-
+~~~
 You should then see something like this:
-
+~~~
     Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) 
     [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>> quit()
-
+~~~
 While inside the python interpreter:
 
 * The `>>>` indicates that you are at a Python prompt.
@@ -44,19 +42,26 @@ While you can absolutely write Python code in any text editor, it is a lot easie
 
 Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded `dmg` file, letting it open up, and subsequently dragging the `Sublime Text` application into your `Applications` folder.
 
-Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True.  In the Sublime Text Menu, add content below Preferences > Settings - User. Make sure that it is inside the curly braces at the top of your file.
+Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True. 
+
+1. Go **Sublime Text > Preferences > Settings**. 
+2. In the `Preferences.sublime - settings-User` file, paste the following. This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
 
 ~~~
 {
+
     // The number of spaces a tab is considered equal to
     "tab_size": 4,
 
     // Set to true to insert spaces when tab is pressed
     "translate_tabs_to_spaces": true,
 
-    ... rest of file
+    //... rest of file
+
 }
 ~~~
+
+3. Save the file. 
 
 # Practice navigating the computer from a Terminal
 
@@ -66,65 +71,46 @@ We often navigate the filesystem graphically (using Finder) where we can click a
 
 To do this, there are three commands that we'll be using:
 
-  * `ls`  lists the contents of a directory
-  * `pwd`  shows you the full path to your current directory (it stands for "print working directory")
-  * `cd`  moves you into a new directory (it stands for "change directory").
+- `ls` lists the contents of a directory ("what's in this folder?").
+- `pwd` prints the full directory path to your current directory. It stands for "print working directory." ("where am I?")
+- `cd` moves you into a new directory (it stands for "change directory").
+    - `cd folder_name` - Go into `folder_name` directory.
+    - `cd ..` - Go up one level in the folder heirarchy.
 
-## Let's practice using these commands.
+Let's practice using these commands.
 
-Open up a Terminal. (hint: it's in `Applications/Utilities`)
+1. Open up a Terminal. (hint: it's in `Applications/Utilities`)
+2. Type each of these commands and hit `enter`:
 
-Type each of these commands and hit `enter`:
+{% highlight bash %}ls{% endhighlight %}
 
-{% highlight bash %}
-ls
-{% endhighlight %}
 This lists all the files in your home directory.
 
-{% highlight bash %}
-pwd
-{% endhighlight %}
+`pwd`
 This displays the full directory path to your current directory, which is your home directory.
 
-{% highlight bash %}
-cd /
-{% endhighlight %}
+`cd /`
 This will change you into the `/` (root) directory.
 
-{% highlight bash %}
-ls
-{% endhighlight %}
+`ls`
 This lists the contents of the `/` (root) directory.
 
-{% highlight bash %}
-cd Users
-{% endhighlight %}
+`cd Users`
 This will change you into the home subdirectory of the `/` (root) directory.
 
-{% highlight bash %}
-ls
-{% endhighlight %}
+`ls`
 You should see a list of all the computer's users' home directories (and possibly a Shared folder).
 
-{% highlight bash %}
-pwd
-{% endhighlight %}
+`pwd`
 This displays the full directory path to your current directory, which in this case is `/Users`.
 
-{% highlight bash %}
-cd ..
-{% endhighlight %}
-`..` is a relative location meaning "parent directory". You were in `/Users`, so now you have moved up to your "parent", `/`, the root directory.
+`cd ..`
+Note `..` is a relative location meaning "parent directory". You were in `/Users`, so now you have moved up to your "parent", `/`, the root directory.
 
-{% highlight bash %}
-ls
-{% endhighlight %}
+`ls`
 This lists the contents of the root directory, confirming where you are.
 
-{% highlight bash %}
-cd ~
-{% endhighlight %}
-
+`cd ~`
 Just like how `..` means "parent directory", `~` means "home" directory. When you execute this command, you'll change back to your home directory, where all your user files are.
 
 #### Tips
@@ -148,23 +134,24 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 * What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you've run the command before)
 * What is the difference between a command prompt and a Python prompt?
 
-
 #### Success!
 
 You've practiced using `ls` and `cd` to navigate your computer's filesystem using Terminal.
 
 # Start learning Python!
+
 Go through this [self-directed tutorial](/day_one_tutorial/) to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.
 
 # Get dependencies installed for the projects
 
-Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
-
-Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
+- Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
+- Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.  
 
 # Practice
+
 Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 # Checkoff
+
 Have an instructor or assistant [check you off](/setupcheckoff/).
 

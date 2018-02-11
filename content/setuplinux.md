@@ -7,7 +7,7 @@ Here's what you need to do to set up your Linux machine.
 
 # Download and Install Python
 
-Most Linux machines have both Python 2 and Python 3 pre-installed.  Open a Terminal window and type `python3` at the prompt.  You should see something like the example in the Python shell section below.  If you don't, please see an instructor.
+Most Linux machines have both Python 2 and Python 3 pre-installed. Open a Terminal window and type `python3` at the prompt. You should see something like the example in the Python shell section below. If you don't, please see an instructor.
 
 # Prepare a text editor
 
@@ -15,9 +15,9 @@ While you can absolutely write python code in any text editor, it is a lot easie
 
 [Download it from here](http://www.sublimetext.com/3)
 
-Install as you would any other program.
+Install as you would any other program. Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True. 
 
-Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True.  In the Sublime Text Menu, add content below Preferences > Settings - User. Make sure that it is inside the curly braces at the top of your file.
+Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is set to True. In the Sublime Text Menu, add content below Preferences > Settings - User. Make sure that it is inside the curly braces at the top of your file.
 
 ~~~
 {
@@ -32,16 +32,14 @@ Be sure that you've set tabs equal to 4 spaces and the tabs to spaces setting is
     ... rest of file
 
 }
-
 ~~~
 
-This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.
-
+3. Save the file. 
 
 # Practice starting & exiting the Python shell
 
-* Open a command prompt.
-* To start Python, type `python3` at the command prompt and hit enter. You should see something like
+1. Open a command prompt.
+2. To start Python, type `python3` at the command prompt and hit enter. You should see something like:
 
 ~~~
 Python 3.4.0 (default, Apr 11 2014, 13:05:11)
@@ -50,28 +48,29 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ~~~
 
-* The `>>>` indicates that you are at a Python prompt.
-* Exit the Python prompt by typing `exit()` and hitting enter.
-* Practice doing this a few times until you are comfortable entering and exiting the Python shell.
+    The `>>>` indicates that you are at a Python prompt.
 
+3. Exit the Python prompt by typing `exit()` and hitting enter. 
+
+Practice doing this a few times until you are comfortable entering and exiting the Python shell.
 
 # Practice navigating the computer from a command prompt
 
 The filesystem on your computer is like a tree made up of folders (also called "directories") and files. The filesystem has a root directory called `/`, and everything on your computer lives in subdirectories of this root directory.
+
 We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
 There are three commands that we'll be using at a command prompt to navigate the filesystem on your computer:
 
-`ls` lists the contents of a directory.
-`pwd` gives the full directory path to your current directory (it stands for "print working directory").
-`cd` moves you into a new directory (it stands for "change directory").
+- `ls` lists the contents of a directory ("what's in this folder?").
+- `pwd` prints the full directory path to your current directory. It stands for "print working directory." ("where am I?")
+- `cd` moves you into a new directory (it stands for "change directory").
+    - `cd folder_name` - Go into `folder_name` directory.
+    - `cd ..` - Go up one level in the folder heirarchy.
 
 Let's practice using these commands.
 
-Open a command prompt:
-You can find the Terminal application at Applications/Accessories/Terminal, or it may already be on your menu bar.
-Practice using ls, pwd, and cd
-
-Type each of these commands and hit enter:
+1. Open a command prompt. You can find the Terminal application at Applications/Accessories/Terminal, or it may already be on your menu bar. 
+2. Type each of these commands and hit enter:
 
 `ls`
 This lists all the files in your home directory.
@@ -102,8 +101,8 @@ This lists the contents of the root directory, confirming where you are.
 
 #### Tips
 
-You can use Tab to auto-complete directory and file names. So from inside the root directory /, if you type cd ho and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the /home directory.
-The command prompt maintains a command history. You can use the up arrow to cycle through old commands.
+- You can use **Tab** to auto-complete directory and file names. So if you're inside the root directory and you type `cd ho` and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the /home directory.
+- The command prompt maintains a command history. You can use the up arrow to cycle through old commands. Open a command prompt and hit the up key a few times.
 
 #### Check your understanding
 
@@ -112,24 +111,27 @@ Answer these questions. Experiment at the command line if you need to! If you ar
 * What directory are you in after starting a new command line prompt?
 * After starting a new command line prompt, how would you get to the root directory?
 * How do you check what files and directories are in your current working directory?
-* If you are in directory /home, and you want to get to /home/PythonWork/projects, how would you do that?
+* If you are in directory `/home`, and you want to get to `/home/PythonWork/projects`, how would you do that?
 * What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you've run the command before)
 * What is the difference between a command prompt and a Python prompt?
 
 #### Success!
+
 You've practiced using dir and cd to navigate your computer's filesystem from the command prompt.
 
 # Start learning Python!
+
 Go through this [self-directed tutorial](/day_one_tutorial/) to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.
 
 # Get dependencies installed for the projects
 
-Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
-
-Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.
+- Download the [Wordplay Project](https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip).
+- Download the [Colorwall Project](https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip) for Python 3.
 
 # Practice
-Try some [practice exercises](/practice/).  If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
+
+Try some [practice exercises](/practice/). If you've been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.
 
 # Checkoff
+
 Have an instructor or assistant [check you off](/setupcheckoff/).

@@ -31,13 +31,11 @@ print("Hello World")
 5//2  # result is 2
 ~~~
 
-
 [Coding Bat](http://codingbat.com/python)
 
 This is a series of short Python exercises that are great for quick practice. Create an account & log in to track your progress and access additional exercises.
 
 [Codecademy](http://www.codecademy.com/courses/python-beginner-en-kSQwt/0/1)
 
-This is part of Codecademy's Intro to Python class.  Again, you can create an account to track your progress and access additional lessons.
-
+This is part of Codecademy's Intro to Python class. Again, you can create an account to track your progress and access additional lessons.
 
