@@ -3,13 +3,21 @@ layout: page
 title: Day One Lesson
 ---
 
-This is the self-guided, self-paced tutorial for day 1.  We've included a break in the middle, but remember to take a break to stretch, get some water, take a moment to relax any time you need to.
+## Welcome to Day One!
 
-As you go through this tutorial, any time you see something like this:
+This is the self-guided, self-paced tutorial for day 1. We've included a break in the middle, but remember to take a break to stretch, get some water, or take a moment to relax any time you need to. If at any time you have questions, ask away!
+
+If you've not yet done so, ensure you've gone through [these setup instructions](/setup) to install and configure Python.
+
+## Using This Tutorial
+
+As you go through this tutorial, you'll see code samples like this:
 
 `a = "Hello"`
 
-it's something that you can type in at the `>>>` prompt in your Python shell.  Hit Return or Enter after every line and note the output (although sometimes there won't be any!).  Don't copy and paste -- you'll learn much better if you take the time to type everything yourself.
+This means that you can type this line in at the `>>>` prompt in your Python shell. Simply enter the line, hit **Return** or **Enter** after every line you enter, and note the output (although sometimes there won't be any!). 
+
+>**Tip**: Don't copy and paste commands -- type them out. You'll learn far more if you take the time to type everything yourself.
 
 ### Math
 
@@ -21,48 +29,55 @@ Math in Python looks a lot like math with a calculator.
 
 `1.65 + 2.15`
 
+`2 + 1.65`
+
 #### Subtraction
 
 `12 - 5`
 
 `45.9 - 25.3`
 
-`45.9 - 61.7`
+`2 - -4`
 
 #### Multiplication
+
 Multiplication uses the `*` (asterisk or star) symbol.
 
 `6 * 7`
 
 `5.6 * 4.3`
 
+`6 * -5`
+
 #### Division
+
 Division uses the `/` symbol.
 
 `12/3`
 
 `16/5`
 
-> Note: If you've used Python 2, you'll see that division works differently in Python 3.  Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer.  Python 3 performs true division, returning the real or true value of the division.
+`10/-5`
 
-To get just the whole number in Python 3, use this syntax:
+> Note: If you've used Python 2, you'll see that division works differently in Python 3. Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.
+
+To get *only* the whole number in Python 3, use this syntax:
 
 `16//5`
 
 `50//4`
 
-
 #### Modulus
-Thinking back to long division you may have learned in school, the modulus is the "remainder" after perfoming division.  It uses the `%` symbol.
+
+Thinking back to long division that you may have learned in school, the modulus is the "remainder" after perfoming division.  It uses the `%` symbol.
 
 `16%5`
 
 `50%4`
 
-
 #### Order of Operations
 
-Order of operations works just like you may have learned in math class - Multiplication, Division, Addition, Subtraction. You can also use parentheses.
+Order of operations works just like you learned in math class - Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.
 
 `5 + 4 * 3`
 
@@ -70,28 +85,28 @@ Order of operations works just like you may have learned in math class - Multipl
 
 ### Types
 
-There's a helpful function (more on what a function is later) called `type` that tells you what kind of thing -- what data type -- Python thinks something is. We can check for ourselves that Python considers '1' and '1.0' to be different data types:
+There's a helpful function (more on what a function is later) called `type` that tells you the data type of a given variable. We can check for ourselves that Python considers '1' and '1.0' to be different data types:
 
 `type(1)`
 
 `type(1.0)`
 
-So now we've seen two data types: *integers* and *floats*.  We'll see more data types as we work through the lesson.
+So now we've seen two data types: *integers* and *floats*. We'll see more data types as we work through the lesson.
 
-We used the term 'function' without explaining what it is -- we'll talk about functions more in a bit, and write our own, but for now know these things:
+We also used the term "function" without explaining what it is -- we'll talk about functions more in a bit, and write our own, but for now know these things:
 
-* Functions encapsulate some useful bit of work. We save that useful bit of work inside the function so we don't have to type it over and over again every time we want to use it. So, for example, some nice person decided that being able to determine the type of an object was useful, so he or she put the Python code that figures out an object's type into the function `type()`, and now we all get to use it, instead of having to write it ourselves.
-* Functions are sort of like functions in math class. You provide input to a function and it produces output. The `type()` function takes data as an input, and produces what type of data the data is (e.g. an integer or a float) as output.
+* Functions encapsulate some useful bit of work. We save that useful bit of work inside a function so we don't have to type it repeatedly. For example, some nice person decided that being able to determine the type of an object was useful, so he or she put the Python code that figures out an object's type into the function `type()`, and now we all get to use it, instead of having to write it ourselves.
+* Functions are sort of like functions in math class. You can provide input to a function and it produces output. The `type()` function takes data as an input, and produces what type of data the data is (e.g. an integer or a float) as output.
 * To use a function, write the name of the function followed by an open parenthesis, what the function takes as input (we call that input the arguments to the function), and then a close parenthesis.
 
-So in this case 'type' is the name of the function, and it takes one argument; in the example we first give type an argument of 1 and then give it an argument of 1.0.
+So in our case, 'type' is the name of the function, and it takes one argument; in the two examples above, we first give type an argument of 1 and then give it an argument of 1.0.
 
 *<p style="color:blue;">
-Stop for a moment here and try pressing the up arrow on your keyboard a few times.  The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!</p>*
+Stop for a moment here and try pressing the up arrow on your keyboard a few times. The Python interpreter saves a history of what you've entered, so you can arrow up to old commands and hit Return to re-run them -- just like your computer's command prompt!</p>*
 
 ### Variables
 
-A lot of work gets done in Python using variables. Variables are like names that are assigned to a value -- any kind of value, not just a number.
+A lot of work gets done in Python using variables. A variable consists of an identifier (the variable's name) and a value stored in the variable -- any kind of value, not just a number. In the example below, `x` is our identifier and `4` is the value stored:
 
 `type(4)`
 
@@ -103,15 +118,15 @@ A lot of work gets done in Python using variables. Variables are like names that
 
 `2 * x`
 
-Giving a name to something, so that you can refer to it by that name, is called assignment. Above, we assigned the name 'x' to 4, and after that we can use x wherever we want to use the number 4.
+Giving a name to something so that you can refer to it by that name later is called assignment. Above, we assigned the name 'x' to 4, and after that we can use x wherever we want to use the number 4.
 
-The space between the variable name, the equal sign, and its value does not matter.  The following are the same.  You should be consistent in your code.
+The space between the identifier, the equal sign, and its value does not matter. The two variables below are indentical. However, you should be consistent in your code.
 
 `x = 5`
 
 `x=5`
 
-Variables can be re-assigned.
+Variables can also be re-assigned.
 
 `x = 3`
 
@@ -121,9 +136,9 @@ Variables can be re-assigned.
 
 `x`
 
-Be careful when you do this though... accidentally re-assigning a variable can cause bugs in your code.
+Be careful when you do this though... accidentally re-assigning a variable can cause bugs in your code. 
 
-Variables can be made of letters, numbers, and underscores. They must start with a letter and can not contain any other special characters.  Here are some valid variable names:
+A variable's identifier can contain letters, numbers, and underscores. However, identifiers **must** start with a letter and can not contain any other special characters. Here are some valid variable names:
 
 `magic_number = 1500`
 
@@ -131,12 +146,11 @@ Variables can be made of letters, numbers, and underscores. They must start with
 
 `my_name = "Jessica"`
 
-Projects develop naming conventions: multi-word variable names may use underscores (like `magic_number`), or "camel case" (like `amountOfFlour`). The most important thing is to be consistent within a project, because it makes the code more readable.
-
+Projects develop naming conventions, so multi-word identifiers may use underscores (like `magic_number`), or "camel case" (like `amountOfFlour`). The most important thing is to **be consistent** within a project, because it makes the code more readable.
 
 ### Strings
 
-So far we've seen two data types: *integers* and *floats*. Another useful data type is a *string*, which is just what Python calls a bunch of characters (like numbers, letters, whitespace, and punctuation) put together. Strings are indicated by being surrounded by quotes:
+So far we've seen two data types: *integers* and *floats*. Another useful data type is a *string*, which is just what Python calls a bunch of characters (like numbers, letters, whitespace, and punctuation) put together between quotation marks:
 
 `"Hello"`
 
@@ -154,10 +168,9 @@ You can assign a string value to a variable:
 
 `my_car = "Toyota"`
 
-
 #### String Concatenation
 
-You can concatenate, or join strings together using the `+` sign:
+You can concatenate (join) strings together using the `+` sign:
 
 `"Hello" + "World"`
 
@@ -175,12 +188,13 @@ Traceback (most recent call last):
 TypeError: Can't convert 'int' object to str implicitly
 ~~~
 
-A traceback provides details on what was happening when Python encounters an Exception or Error -- something it doesn't know how to handle.
-There are many kinds of Python errors, with descriptive names to help us humans understand what went wrong. In this case we are getting a `TypeError`: we tried to do some operation on a data type that isn't supported for that data type.
+A traceback provides details on what was happening when Python encounters an Exception or Error -- something it doesn't know how to handle. There are many kinds of Python errors, each with descriptive names to help us humans understand what went wrong. In this case we are getting a `TypeError`: we tried to do some operation on a data type that isn't supported for that data type.
+
 Python gives us a helpful error message as part of the `TypeError`:
+
 `"cannot concatenate 'str' and 'int' objects"`.
 
-We can, however, use the `str()` function to convert a number to a string.  Like the `type()` function we've been using, `str()` takes one argument as input and outputs it as a string.
+We can, however, use the `str()` function to convert a number to a string. Like the `type()` function we've been using, `str()` takes one argument as input and outputs it as a string.
 
 `str(4)`
 
@@ -190,7 +204,7 @@ We can, however, use the `str()` function to convert a number to a string.  Like
 
 #### String Length
 
-There's another useful function that works on strings called `len()`.  This returns the length of a string as an integer.
+There's another useful function that works on strings called `len()`. This returns the length of a string as an integer.
 
 `len("Hello")`
 
@@ -204,27 +218,33 @@ There's another useful function that works on strings called `len()`.  This retu
 
 We've been using double quotes around your strings, but either double or single quotes are valid in Python:
 
-`"Hello world"`
-
 `'Hello world'`
+
+`"Hello world"`
 
 You do have to be careful about using quotes inside strings:
 
 `'Let's learn Python together!'`
 
-will give you another `traceback`, for a `SyntaxError`.  When Python evaluates this expression, it starts at the first single quote as the start of the string, and to the next single quote as the end of the string.  Then it doesn't know what to do with the rest of the stuff that follows.
+will give you another `traceback`, for a `SyntaxError`. When Python evaluates this expression, it starts at the first single quote as the start of the string, and to the next single quote as the end of the string. Then it doesn't know what to do with the rest of the stuff that follows.
 
-There are a few ways to solve this problem.  One is to use double quotes:
+There are a few ways to solve this problem. One is to use double quotes on the outside:
 
 `"Let's learn Python together!"`
 
-or we can *escape* the quote with a backslash.  The backslash is a special character that tells Python to treat the next character literally, not as part of the syntax or code.
+or we can *escape* the quote with a backslash:
 
 `'Let\'s learn Python together!'`
 
+The backslash is a special character that tells Python to treat the next character literally, not as part of the syntax or code. Thus, you can do things like this:
+
+`str = "Fernando said, \"Python is fun!\""`
+
+`print(str)`
+
 #### Exercises
 
-Let's take a look at a couple of exercises.  Read the following lines of code, but don't execute them.  Try to figure out what they will do.  Sketch them out with pen and paper if you need to. Then type them in your terminal and execute them to see what happens.
+Let's take a look at a couple of exercises. Read the following lines of code, but don't execute them. Try to figure out what they will do. Sketch them out with pen and paper if you need to. Then type them in your terminal and execute them to see what happens.
 
 1.
 
@@ -251,11 +271,9 @@ print(2.0 * 123 + str(2.0) * 123)
 
 Let's take a break.  We've covered a lot!
 
+#### Comments and New Lines
 
-
-#### Comments and new lines
-
-Copy and paste the following code into a new file and save it as `mayors.py`.
+Below is an example of how to use comments and insert new lines:
 
 ~~~
 # The pound sign is used as a comment character in Python. Programmers
@@ -265,6 +283,7 @@ Copy and paste the following code into a new file and save it as `mayors.py`.
 # Notice how the 'print' command has been inserting a new line at the
 # end of our strings.
 print("The last three mayors of Philadelphia were:")
+
 # We can insert newlines ourselves, using "\n".
 print("Michael Nutter\nJohn Street\nEd Rendell")
 
@@ -286,24 +305,29 @@ print("""Jim Kenney received
         popular vote""")
 ~~~
 
-So far, we've been running code directly from the shell interpreter.  This is great for testing and short bits of code but for longer projects we want to save our script in a file and run it from our computer's terminal.  Open your computer's terminal (not the Python shell) and navigate to the directory where you saved this file.  At your computer's command prompt type
+### Python Scripts
 
-`python3 mayors.py`
+So far, we've been running code directly from the shell interpreter (the `>>>` prompt). This is great for testing and exploring short bits of code, but for longer projects we want to save our script in a file and run it from our computer's terminal. 
 
-to run this script.  Study what happens.  Edit this so it displays the last four mayors of Philadelphia. (Look it up on [Wikipedia](https://en.wikipedia.org/wiki/List_of_mayors_of_Philadelphia) if you need to!).  Save it and run it again.
+1. Copy and paste the entire code block from the previous section (including the comments) into a new text file and save it as `mayors.py`. Note the `.py` file extension, indicating that this is a Python script.
+2. Open your computer's terminal (not the Python shell) and navigate to the directory where you saved this file. At your computer's command prompt, type:
 
+  `python3 mayors.py`
 
-**Do you know how to do these things?**
+  to run this script. Study what happens. Edit this file so it displays the last four mayors of Philadelphia (Look it up on [Wikipedia](https://en.wikipedia.org/wiki/List_of_mayors_of_Philadelphia) if you need to!). Save it and run it again.
+
+**CHECKPOINT: Do you know how to do these things?**
+
 : How do you run a Python script from your computer's terminal?
 : How do you comment code in Python?
 : How do you print just a newline?
 : How do you print a multi-line string so that whitespace is preserved?
 
-
 #### Booleans
-So far, the code we've written has been *unconditional*: no choice is getting made, and the code is always run. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. There are two booleans: `True` and `False`.
 
-Try typing these in your Python console.
+So far, the code we've written has been *unconditional*: no choice is getting made--all of the code runs. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. Booleans hold two values: `True` and `False`.
+
+Re-open the Python console and try typing these:
 
 `True`
 
@@ -313,7 +337,11 @@ Try typing these in your Python console.
 
 `type(False)`
 
-You can test if Python objects are equal or unequal. The result is a boolean.  Try typing these expressions in your Python console:
+`true`
+
+`false`
+
+You can test if Python objects are equal or unequal. The result is a boolean. Try typing these expressions in your Python console:
 
 `0 == 0`
 
@@ -321,9 +349,7 @@ You can test if Python objects are equal or unequal. The result is a boolean.  T
 
 `54 = 42`
 
-Use `==` to test for equality. Recall that `=` is used for assignment of a variable to a value.
-This is an important idea and can be a source of bugs until you get used to it: `=` is assignment, `==` is comparison.
-
+Use `==` to test for equality. Recall that `=` is used for assignment of a variable to a value. This is an important idea and can be a source of bugs until you get used to it: `=` is assignment, `==` is comparison.
 
 Use `!=` to test for inequality:
 
@@ -355,23 +381,24 @@ Or check for a lack of containment with `not in`:
 
 #### Flow Control
 
-Now that we know how to check if something is `True` or `False` we can use this to make Python execute command conditionally.
-
+Now that we know how to check if something is `True` or `False`, we can use this to make Python execute commands conditionally.
 
 ~~~
 if 6 > 5:
      print("Six is greater than five!")
 ~~~
 
-That was our first multi-line piece of code, and the way to enter it at a Python prompt is a little different. First, type the `if 6 > 5:` part, and hit `enter`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
-Type 4 spaces, and then type `print("Six is greater than five!")`. Hit `enter` to end the line, and hit `enter` again to tell Python you are done with this code block. All together, it will look like this:
+That was our first multi-line piece of code, and the way to enter it at a Python prompt is a little different. 
+
+1. First, type the `if 6 > 5:` part, and hit `enter`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
+2. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `enter` to end the line. 
+3. Finally, hit `enter` again to tell Python you are done with this code block. All together, it will look like this:
 
 ~~~
 >>> if 6 > 5:
 ...      print("Six is greater than five!")
 Six is greater than five!
 ~~~
-
 
 So what's going on here? When Python encounters the `if` keyword, it evaluates the expression following the keyword and before the colon. If that expression is `True`, Python executes the code in the indented code block under the `if` line. If that expression is `False`, Python skips over the code block.
 
@@ -404,8 +431,10 @@ Like with `if`, the code block under the `else` statement must be indented so Py
 
 **compound conditionals: `and` and `or`**
 
-We've been testing single conditions, but we can also test multiple conditions that result in execution of some code.
-You can check multiple expressions together using the `and` and `or` keywords. If two expressions are joined by an `and`, they both have to be `True` for the overall expression to be `True`. If two expressions are joined by an `or`, as long as at least one is `True`, the overall expression is `True`.
+We've been testing single conditions, but we can also test multiple conditions that result in execution of some code. You can check multiple expressions together using the `and` and `or` keywords. 
+
+- If two expressions are joined by an `and`, they both have to be `True` for the overall expression to be `True`. 
+- If two expressions are joined by an `or`, as long as at least one is `True`, the overall expression is `True`.
 
 Try typing these out and see what you get:
 
@@ -437,12 +466,11 @@ else:
     print("Can I interest you in some choice gouda?")
 ~~~
 
-You can have as many lines of code as you want in if and else blocks; just make sure to indent them so Python knows they are a part of the block.
-
+You can have as many lines of code as you want in if and else block; just make sure to indent them so Python knows they are a part of the block.
 
 **even more choices: elif and else**
 
-If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if.  You can have as many `elif` cases as you want; Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
+If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if. You can have as many `elif` cases as you want. Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
 
 ~~~
 sister_age = 15
@@ -455,7 +483,7 @@ else:
     print("brother is older")
 ~~~
 
-You don't have to have an `else` block, if you don't need it. That just means there isn't default code to execute when none of the `if` or `elif`conditions are `True`:
+You don't have to have an `else` block if you don't need it. That just means there isn't default code to execute when none of the `if` or `elif`conditions are `True`:
 
 ~~~
 color = "orange"
@@ -468,36 +496,35 @@ elif color == "pink":
 ~~~
 
 If color had been "purple", that code wouldn't have printed anything.
+
 *Remember that `=` is for assignment and `==` is for comparison.*
 
 #### Functions
 
-One of the main reasons you want to write code is so your tasks can be run quickly and be automated.  Functions allow you to write reusable blocks of code. Why are functions important?
+Functions take input from the user or the application and (usually) produce output (e.g. they return a value). You can then assign a variable to this output. As we've shown in previous sections, you call a function by using its name followed by its arguments in parenthesis.
 
-* They do some useful bit of work.
+Why are functions important?
+
+* They allow tasks to be run quickly and to be automated, i.e. they do some useful bit of work.
 * They let us re-use code without having to type it out each time.
-* They take input and possibly produce output (we say they return a value). You can assign a variable to this output.
-* You call a function by using its name followed by its arguments in parenthesis.
+* They facilitate consistency and reduce the risk of error. 
 
-Python has many built in functions.  For example
+Python has many built in functions. For example:
 
 `length = len("Mississippi")`
 
-Executing this code assigns the length of the string "Mississippi" to the variable length.
+Executing this code assigns the length of the string "Mississippi" to the variable length. We can write our own functions to encapsulate bits of useful work so we can reuse them. Here's how you do it:
 
-We can write our own functions to encapsulate bits of useful work so we can reuse them. Here's how you do it:
+**Step 1: Write a Function signature**
 
+A function signature tells you how the function will be called. It starts with the keyword `def`, which tells Python that you are defining a function. Then comes a space, the name of your function, an open parenthesis, the comma-separated input parameters for your function, a close parenthesis, and a colon. 
 
-**Step 1: write a function signature**
-
-A function signature tells you how the function will be called. It starts with the keyword `def`, which tells Python that you are defining a function. Then comes a space, the name of your function, an open parenthesis, the comma-separated input parameters for your function, a close parenthesis, and a colon. Here's what a function signature looks like for a function that takes no arguments:
+Here's what a function signature looks like for a function that takes no arguments:
 
 ```
 def myFunction():
     # Your code would go here!
-    pass
 ```
-
 
 Here's what a function signature looks like for a function that takes one argument called my_string:
 
@@ -507,22 +534,20 @@ And one for a function that takes two arguments:
 
 `def myFunction(myList, myInteger):`
 
-Parameters should have names that usefully describe what they are used for in the function.
+Parameters should have names that usefully describe what they are used for in the function. 
 
-We've used the words parameters and arguments seemingly interchangeably to reference the input to functions. The distinction isn't really important right now, but if you're curious: in function signatures the input is called parameters, and when you are calling the function the input is called arguments.
+>Note: We've used the words parameters and arguments seemingly interchangeably to reference the input to functions. The distinction isn't really important right now, but if you're curious: in function signatures the input is called parameters, and when you are calling the function the input is called arguments.
 
-**Step 2: do useful work inside the function**
+**Step 2: Do useful work inside the function**
 
-Underneath the function signature you do your useful work. Everything inside the function is indented, just like with if/else blocks, so Python knows that it is a part of the function.
-
-You can use the variables passed into the function as parameters, just like you can use variables once you define them outside of functions.
+Underneath the function signature is where you do your useful work. Everything inside the function is indented, just like with if/else blocks, so Python knows that it is a part of the function. You can use the variables passed into the function as parameters, just like you can use variables once you define them outside of functions.
 
 ~~~
 def add(x, y):
     result = x + y
 ~~~
 
-**Step 3: return something**
+**Step 3: Return something**
 
 If you want to be able to assign a variable to the output of a function, the function has to return that output using the `return` keyword.
 
@@ -533,15 +558,12 @@ def add(x, y):
 ~~~
 
 or, even shorter:
-
 ~~~
 def add(x, y):
     return x + y
 ~~~
 
-You can return any Python object: numbers, strings, booleans ... even other functions!
-
-Once you execute a return, you are done with the function -- you don't get to do any more work. That means if you have a function like this:
+You can return any Python object: numbers, strings, booleans ... even other functions! Once you execute a return, you are done with the function -- you don't get to do any more work. That means that if you have a function like this:
 
 ~~~
 def absoluteValue(number):
@@ -550,9 +572,7 @@ def absoluteValue(number):
     return number
 ~~~
 
-
-if number is less than 0, you return number * -1 and never even get to the last line of the function. However, if number is greater than or equal to 0, the if expression evaluates to False, so we skip the code in the if block and return number.
-
+If `number` is less than 0, you return number * -1 and never even get to the last line of the function. However, if number is greater than or equal to 0, the if expression evaluates to False, so we skip the code in the if block and return number.
 
 We could have written the above function like this if we wanted. It's the same logic, just more typing:
 
@@ -564,10 +584,9 @@ def absoluteValue(number):
         return number
 ~~~
 
-**Step 4: use the function**
+**Step 4: Use the function**
 
-Once you define a function you can use it as many times as you want.
-You can assign the value it returns to other variables and use those variables in other commands.
+Once you define a function you can use it as many times as you want. You can assign the value it returns to other variables and use those variables in other commands.
 
 ~~~
 def add(x, y):
@@ -582,9 +601,9 @@ print(result2)
 print("The total sum is", result1 + result2)
 ~~~
 
-Functions don't have to return anything, if you don't want them to. They usually return something because we usually want to be able to assign variables to their output.  If your function does not return anything, you won't be able to assign a variable to its output and won't be able to use its output anywhere else.
+Functions don't have to return anything if you don't want them to. They usually return something because we usually want to be able to assign variables to their output. If your function does not return anything, you won't be able to assign a variable to its output and won't be able to use its output anywhere else.
 
-What do you think will happen here?  Try it and see:
+What do you think will happen here? Try it and see:
 
 ```
 def half_number(x):
@@ -594,8 +613,4 @@ half1 = half_number(20)
 print(half1)
 ```
 
-That's it for this evening! Now you can take some time to try some of the [practice exercises](/practice/) and review anything here that seemed challenging.  We'll review all this and get deeper into Python during day two's presentation.
-
-
-
-
+That's it for this evening! Now you can take some time to try some of the [practice exercises](/practice/) and review anything here that seemed challenging. We'll review all this and get deeper into Python during day two's presentation.
