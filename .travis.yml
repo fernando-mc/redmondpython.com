@@ -6,7 +6,9 @@ install:
   # Install any dependencies required for building your site here.
   # `awscli` is required for invalidation of CloudFront distributions.
   - pip install awscli
-  - sudo apt-get install hugo
+  - pip install Pygments
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+  - sudo dpkg -i hugo*.deb 
 script:
   # Build your site (e.g., HTML, CSS, JS) here.
   - hugo
