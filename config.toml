@@ -27,7 +27,9 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 [[menu.sidebar]]
   name = "5. Full Workshop - Day 2"
   url = "/day_two_lesson"
-
+[[menu.sidebar]]
+  name = "6. Contributing to Redmondpython.com"
+  url = "/contributing"
 
 [[menu.navbar]]
   name = "Machine Setup"
