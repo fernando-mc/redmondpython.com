@@ -6,7 +6,7 @@
 - Python Features
 - Installation
 - Using the Interpreter
-- Interactive Mode vs. Script Mode
+- Tracebacks
 - Comments
 - Review
 - Exercises
@@ -58,7 +58,7 @@ What can you do with Python?
 
 # Installation
 
-First, you might already have Python installed.
+First, you might already have Python3 installed (Python2 is retiring in 2020).
 
 1. Open a terminal or command prompt.
 2. Type `python` and hit **ENTER**.
@@ -72,7 +72,7 @@ Now that we have Python installed, let's open the interpreter:
 1. Open a terminal or command prompt.
 2. Type `python` and hit **ENTER**.
 
-You've just accessed the Python interpreter. Your prompt should look something like:
+Your prompt should look something like:
 ```
 Python 3.6.4 (default, Jan  3 2018, 12:27:09)
 [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
@@ -82,6 +82,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 You'll know you're in the interpreter when you see `>>>`. The interpreter is ready for your input. This is what is meant by "interpreted." There is no compiling in Python. You can just run the code.
 
 Type `exit()` or hit `ctrl+d` to exit. Everything you entered in that previous session is lost between sessions.
+
+<!-- Commenting out for now, let's use this in a later lesson
 
 # Interactive Mode vs. Script Mode
 
@@ -95,7 +97,7 @@ We'll run larger scripts later in "Script Mode." In that mode, you'll put your c
 ```
 $ python myScript.py
 ```
-For now, let's stick with Interactive Mode.
+For now, let's stick with Interactive Mode. -->
 
 # Basic Operations
 
@@ -128,6 +130,29 @@ One more thing to note. For now, our variables will start with a lowercase lette
 
 >*Remember*: Once you close the interpreter, all of this data is lost.
 
+# Tracebacks
+
+When you make a mistake, Python generates a traceback to tell you what went wrong.
+
+Open the interpreter and run:
+```py
+>>> a = "John"
+>>> a + 2
+```
+We see the following error:
+```py
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: must be str, not int
+```
+The above traceback tells us the following:
+
+- The name of the file where the error occurred: "<stdin>"
+- The line number containing the error: 1
+- The name of the module (if applicable)
+- The error type: TypeError [(Full list of error types here)](https://www.tutorialspoint.com/python/standard_exceptions.htm)
+- What's wrong: we tried to do something on one data type (an int) that Python will only let us do to a string
+
 # Comments
 
 Single line:
@@ -155,24 +180,15 @@ print("Your Name")
 
 # Review of Key Points
 
-1. Python is interpreted. No compiling needed.
+1. Python is open source.
 2. Python is platform independent.
 3. Python is minimalist.
 4. Access the interpreter by running `$ python`.
-5. There are two modes in which you can run Python: Interactive and Script.
+5. You do not compile a Python program before you run it--you just run it. This is what is meant when people say Python is "interpreted."
 
 # Exercises
 
-1. True or False: Python requires a compiler.
-2. True or False: Python programs written Windows can only run on other Windows machines.
-3. True or False: Python is strongly typed.
-4. True or False: Variables store values.
-5. How do I open the Python interpreter?
-6. How do I close the Python interpreter?
-7. True or False: Data that you enter into the Python interpreter persists across sessions.
-8. True or False: The two modes in Python are called the Interactive Mode and Variable Mode.
-9. What are the two modes in Python? What's the difference between them?
-10. How do you comment in Python?
+TBD
 
 # Additional Resources
 
@@ -180,3 +196,4 @@ print("Your Name")
 - [Python Guide for Beginners - Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers)
 - [Coding Bat](https://www.codingbat.com/python)
 - [Hacker Rank](https://hackerrank.com)
+- [Try Git](https://www.codeschool.com/courses/try-git)
