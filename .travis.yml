@@ -8,7 +8,8 @@ install:
   - pip install awscli
   - pip install Pygments
   - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb 
+  - sudo dpkg -i hugo*.deb
+  - rm -rf public || exit 0
 script:
   # Build your site (e.g., HTML, CSS, JS) here.
   - hugo
@@ -35,3 +36,6 @@ after_deploy:
   - aws configure set preview.cloudfront true
   # Invalidate every object in the targeted distribution.
   - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  # check that files are actually here in build logs.
+  - ls public 
+  - rm -rf ./public
