@@ -6,7 +6,7 @@ install:
   # Install any dependencies required for building your site here.
   # `awscli` is required for invalidation of CloudFront distributions.
   - pip install awscli
-  - apt-get install hugo
+  - sudo apt-get install hugo
 script:
   # Build your site (e.g., HTML, CSS, JS) here.
   - hugo
