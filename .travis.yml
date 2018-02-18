@@ -35,5 +35,6 @@ after_deploy:
   - aws configure set preview.cloudfront true
   # Invalidate every object in the targeted distribution.
   - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+  # check that files are actually here in build logs.
   - ls public 
   - rm -rf ./public
