@@ -213,9 +213,14 @@ else:
 
 We'll talk more about functions in a different lecture, but for now we'll introduce a few small functions that can help us with numerical types. We can convert between numerical types with ease:
 
-- `int(5.0)` # Converts 5.0 to 5
-- `float(4)` # Converts 4 to 4.0
-
+Converts 5.0 to 5:
+```
+>>> int(5.0)
+```
+Converts 4 to 4.0:
+```
+>>> float(4)
+```
 We can also use the handy built-in `type()` function to determine the type of a given variable.
 
 Convert from float to int:
