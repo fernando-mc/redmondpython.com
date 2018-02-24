@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Introduction to Python Schedule  Overview Python Features Installation Using the Interpreter Tracebacks Comments Review Exercises Additional Resources  Overview Python is an easy-to-write, easy-to-read interpreted scripting language. &ldquo;Hello world!&rdquo; looks like this:
+&gt;&gt;&gt;print(&quot;Hello world!&quot;) Hello world!  Here&rsquo;s a more complex example (an application to send an email).
+ Import some code. Create an SMTP object to connect with a server. Log in to the server. Create our message." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.redmondpython.com/lectures/intro/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Introduction to Python Schedule  Overview Python Features Installation Using the Interpreter Tracebacks Comments Review Exercises Additional Resources  Overview Python is an easy-to-write, easy-to-read interpreted scripting language. &ldquo;Hello world!&rdquo; looks like this:
+&gt;&gt;&gt;print(&quot;Hello world!&quot;) Hello world!  Here&rsquo;s a more complex example (an application to send an email).
+ Import some code. Create an SMTP object to connect with a server. Log in to the server. Create our message."/>
+<meta name="generator" content="Hugo 0.36.1" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "https://www.redmondpython.com/lectures/intro/",
+  "wordCount": "780",
+  "datePublished": "0001-01-01T00:00:00&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Fernando Medina Corey"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://www.redmondpython.com/lectures/intro/">
+
+    <title> | Redmond Python</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://www.redmondpython.com/css/style.css" rel="stylesheet" integrity="sha384-HjEPigLMLBzVQsUi6JWp9tmxJtBimdClDBxwZrwZR&#43;VE3s11/PtFYOrLClxIv2SG" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://www.redmondpython.com/">Home</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/day_one_lesson">2-Day Workshop</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/setup">Machine Setup</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/short_workshop">Short Workshop</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://www.redmondpython.com/" rel="home">Redmond Python</a></h1>
+        <p class="lead blog-description">The Python User Group of Redmond, WA</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://www.redmondpython.com/lectures/intro/"></a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by Fernando Medina Corey</p>
+  </header>
+  
+
+<h1 id="introduction-to-python">Introduction to Python</h1>
+
+<h1 id="schedule">Schedule</h1>
+
+<ul>
+<li>Overview</li>
+<li>Python Features</li>
+<li>Installation</li>
+<li>Using the Interpreter</li>
+<li>Tracebacks</li>
+<li>Comments</li>
+<li>Review</li>
+<li>Exercises</li>
+<li>Additional Resources</li>
+</ul>
+
+<h1 id="overview">Overview</h1>
+
+<p>Python is an easy-to-write, easy-to-read interpreted scripting language. &ldquo;Hello world!&rdquo; looks like this:</p>
+
+<pre><code class="language-py">&gt;&gt;&gt;print(&quot;Hello world!&quot;)
+Hello world!
+</code></pre>
+
+<p>Here&rsquo;s a more complex example (an application to send an email).</p>
+
+<ol>
+<li>Import some code.</li>
+<li>Create an SMTP object to connect with a server.</li>
+<li>Log in to the server.</li>
+<li>Create our message.</li>
+<li>Send the message.</li>
+</ol>
+
+<pre><code class="language-py">import smtplib
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.login(&quot;youremailusername&quot;, &quot;password&quot;)
+msg = &quot;/nHello!&quot;
+server.sendmail(&quot;you@gmail.com&quot;, &quot;yourFriend@hotmail.com&quot;, msg)
+</code></pre>
+
+<p>The purpose of this example is to show you what you can accomplish in a few lines.</p>
+
+<h1 id="python-features">Python Features</h1>
+
+<ul>
+<li>Open source (anyone can see all of the underlying code)</li>
+<li>Object-oriented (everything in Python is an object)</li>
+<li>Platform-independent</li>
+<li>Strongly typed (no need to define a variable&rsquo;s data type)</li>
+<li>Minimalist design philosophy
+
+<ul>
+<li>Emphasizes cleanliness and readability</li>
+<li>Minimal semicolons and brackets</li>
+</ul></li>
+</ul>
+
+<p>What can you do with Python?</p>
+
+<ul>
+<li>Interact with files on your computer</li>
+<li>Automate workflow</li>
+<li>Build and deploy APIs</li>
+<li>Build games</li>
+<li>Interact with web services</li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+
+<p>First, you might already have Python3 installed (Python2 is retiring in 2020).</p>
+
+<ol>
+<li>Open a terminal or command prompt.</li>
+<li>Type <code>python</code> and hit <strong>ENTER</strong>.</li>
+</ol>
+
+<p>Installing Python is easy. See <a href="https://www.redmondpython.com/setup/">this page</a> for instructions.</p>
+
+<h1 id="using-the-python-interpreter">Using the Python Interpreter</h1>
+
+<p>Now that we have Python installed, let&rsquo;s open the interpreter:</p>
+
+<ol>
+<li>Open a terminal or command prompt.</li>
+<li>Type <code>python</code> and hit <strong>ENTER</strong>.</li>
+</ol>
+
+<p>Your prompt should look something like:</p>
+
+<pre><code>Python 3.6.4 (default, Jan  3 2018, 12:27:09)
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre>
+
+<p>You&rsquo;ll know you&rsquo;re in the interpreter when you see <code>&gt;&gt;&gt;</code>. The interpreter is ready for your input. This is what is meant by &ldquo;interpreted.&rdquo; There is no compiling in Python. You can just run the code.</p>
+
+<p>Type <code>exit()</code> or hit <code>ctrl+d</code> to exit. Everything you entered in that previous session is lost between sessions.</p>
+
+<!-- Commenting out for now, let's use this in a later lesson
+
+# Interactive Mode vs. Script Mode
+
+There are two "modes" in which we can run Python. Open the interpreter again by running:
+```
+$ python
+```
+This is "Interactive Mode." This means we're feeding lines directly into the Python interpreter and it's interpreting the code live.
+
+We'll run larger scripts later in "Script Mode." In that mode, you'll put your code in a file and pass it at the command line like this:
+```
+$ python myScript.py
+```
+For now, let's stick with Interactive Mode. -->
+
+<h1 id="basic-operations">Basic Operations</h1>
+
+<p>The purpose of this next section is <strong>not</strong> to teach you the basics of Python, but rather, get you comfortable entering data into the interpreter.</p>
+
+<p>Open the Python interpreter and type the following lines, noting the output:</p>
+
+<pre><code>&gt;&gt;&gt;2 + 4
+&gt;&gt;&gt;5 - 1
+&gt;&gt;&gt;3 * 4
+&gt;&gt;&gt;10 / 2
+</code></pre>
+
+<p>This is how easy it is to interact with the interpreter. This also introduces you to some basic math operations available to you in Python, like addition, subtraction, etc. We&rsquo;ll expand on this later.</p>
+
+<p>Next, let&rsquo;s briefly introduce variables. Like other languages, Python variables store values&ndash;numbers, text, lists, etc. Let&rsquo;s create a few variables that store some simple integers.</p>
+
+<pre><code>&gt;&gt;&gt;x = 4
+&gt;&gt;&gt;y = 2
+&gt;&gt;&gt;print(x + y)
+</code></pre>
+
+<p>Above, we assigned &ldquo;4&rdquo; to the variable x and &ldquo;2&rdquo; to y, and then call the &ldquo;print&rdquo; function to print the sum. Note that we don&rsquo;t have to declare our variables as &ldquo;integers.&rdquo; Python is strongly typed and interprets a variable&rsquo;s type at runtime.</p>
+
+<p>Try entering some strings of text:</p>
+
+<pre><code>name = &quot;Your Name&quot;
+print(name)
+print(&quot;Your Name&quot;)
+</code></pre>
+
+<p>One more thing to note. For now, our variables will start with a lowercase letter. We&rsquo;ll be expanding on variables and functions in a later lesson.</p>
+
+<blockquote>
+<p><em>Remember</em>: Once you close the interpreter, all of this data is lost.</p>
+</blockquote>
+
+<h1 id="tracebacks">Tracebacks</h1>
+
+<p>When you make a mistake, Python generates a traceback to tell you what went wrong.</p>
+
+<p>Open the interpreter and run:</p>
+
+<pre><code class="language-py">&gt;&gt;&gt; a = &quot;John&quot;
+&gt;&gt;&gt; a + 2
+</code></pre>
+
+<p>We see the following error:</p>
+
+<pre><code class="language-py">Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: must be str, not int
+</code></pre>
+
+<p>The above traceback tells us the following:</p>
+
+<ul>
+<li>The name of the file where the error occurred: &ldquo;<stdin>&ldquo;</li>
+<li>The line number containing the error: 1</li>
+<li>The name of the module (if applicable)</li>
+<li>The error type: TypeError <a href="https://www.tutorialspoint.com/python/standard_exceptions.htm">(Full list of error types here)</a></li>
+<li>What&rsquo;s wrong: we tried to do something on one data type (an int) that Python will only let us do to a string</li>
+</ul>
+
+<h1 id="comments">Comments</h1>
+
+<p>Single line:</p>
+
+<pre><code># Here is a code in python
+name = &quot;Your Name&quot;
+print(name)
+print(&quot;Your Name&quot;)
+</code></pre>
+
+<p>This is an in-line comment:</p>
+
+<pre><code>name = &quot;Your Name&quot;
+print(name) # Prints name
+print(&quot;Your Name&quot;)
+</code></pre>
+
+<p>Here is a multiline comment</p>
+
+<pre><code>'''
+This is a multiline comment for longer comments that you want to put in your code. Commenting code is important when you're sharing code with multiple people.
+'''
+name = &quot;Your Name&quot;
+print(name)
+print(&quot;Your Name&quot;)
+</code></pre>
+
+<h1 id="review-of-key-points">Review of Key Points</h1>
+
+<ol>
+<li>Python is open source.</li>
+<li>Python is platform independent.</li>
+<li>Python is minimalist.</li>
+<li>Access the interpreter by running <code>$ python</code>.</li>
+<li>You do not compile a Python program before you run it&ndash;you just run it. This is what is meant when people say Python is &ldquo;interpreted.&rdquo;</li>
+</ol>
+
+<h1 id="exercises">Exercises</h1>
+
+<p>TBD</p>
+
+<h1 id="additional-resources">Additional Resources</h1>
+
+<ul>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/NonProgrammers">Python Guide for Beginners - Non-Programmers</a></li>
+<li><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">Python Guide for Beginners - Programmers</a></li>
+<li><a href="https://www.codingbat.com/python">Coding Bat</a></li>
+<li><a href="https://hackerrank.com">Hacker Rank</a></li>
+<li><a href="https://www.codeschool.com/courses/try-git">Try Git</a></li>
+</ul>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.redmondpython.com%2flectures%2fintro%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fwww.redmondpython.com%2flectures%2fintro%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.redmondpython.com%2flectures%2fintro%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fwww.redmondpython.com%2flectures%2fintro%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>Adapted from the <a href="http://phillypythonworkshop.github.io/">Philly PUG&rsquo;s workshop</a>.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/first-redmond-python-user-group-meetup/">First Redmond Python User Group Meetup</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://www.redmondpython.com/setup">1. Machine Setup Steps</a></li>
+      
+      <li><a href="https://www.redmondpython.com/practice">2. Practice</a></li>
+      
+      <li><a href="https://www.redmondpython.com/projects">3. Projects</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_one_lesson">4. Full Workshop - Day 1</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_two_lesson">5. Full Workshop - Day 2</a></li>
+      
+      <li><a href="https://www.redmondpython.com/contributing">6. Contributing to Redmondpython.com</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      This workshop was initially created by <a href="http://phillypythonworkshop.github.io/">Philly&rsquo;s Python User Group</a> and adapted by the <a href="https://www.meetup.com/Redmond-Python-User-Group/">Redmond Python User Group</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

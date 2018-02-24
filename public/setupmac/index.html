@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Setup - Mac" />
+<meta property="og:description" content="While Macs come with Python 2.7.x pre-installed, but because Python 2&rsquo;s end-of-life is just around the corner, we&rsquo;ll be working with Python 3 during this session so there&rsquo;s some light installation ahead of us. This will require administrative priveleges on your computer since the Python installation is usually done to protected directories. Along the way, we&rsquo;ll also set up a more advanced text editor that will help us by providing some really specific programming features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.redmondpython.com/setupmac/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup - Mac"/>
+<meta name="twitter:description" content="While Macs come with Python 2.7.x pre-installed, but because Python 2&rsquo;s end-of-life is just around the corner, we&rsquo;ll be working with Python 3 during this session so there&rsquo;s some light installation ahead of us. This will require administrative priveleges on your computer since the Python installation is usually done to protected directories. Along the way, we&rsquo;ll also set up a more advanced text editor that will help us by providing some really specific programming features."/>
+<meta name="generator" content="Hugo 0.36.1" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Setup - Mac",
+  "url": "https://www.redmondpython.com/setupmac/",
+  "wordCount": "1210",
+  "datePublished": "0001-01-01T00:00:00&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Fernando Medina Corey"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://www.redmondpython.com/setupmac/">
+
+    <title>Setup - Mac | Redmond Python</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://www.redmondpython.com/css/style.css" rel="stylesheet" integrity="sha384-HjEPigLMLBzVQsUi6JWp9tmxJtBimdClDBxwZrwZR&#43;VE3s11/PtFYOrLClxIv2SG" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://www.redmondpython.com/">Home</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/day_one_lesson">2-Day Workshop</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/setup">Machine Setup</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/short_workshop">Short Workshop</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://www.redmondpython.com/" rel="home">Redmond Python</a></h1>
+        <p class="lead blog-description">The Python User Group of Redmond, WA</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://www.redmondpython.com/setupmac/">Setup - Mac</a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by Fernando Medina Corey</p>
+  </header>
+  
+
+<p>While Macs come with Python 2.7.x pre-installed, but because Python 2&rsquo;s end-of-life is just around the corner, we&rsquo;ll be working with Python 3 during this session so there&rsquo;s some light installation ahead of us. This will require administrative priveleges on your computer since the Python installation is usually done to protected directories. Along the way, we&rsquo;ll also set up a more advanced text editor that will help us by providing some really specific programming features.</p>
+
+<h1 id="installing-python-3-6-for-mac">Installing Python 3.6 for Mac</h1>
+
+<p>To install Python 3 for Mac:</p>
+
+<ul>
+<li>Download the package available here: <a href="https://www.python.org/ftp/python/3.6.0/python-3.6.0-macosx10.6.pkg">Python 3.6.0 Installation Package for Mac</a></li>
+<li>Double click the downloaded file to start the installation process.</li>
+<li>Click through the wizard. The default settings are all fine to use. Close the wizard when complete.
+
+<ul>
+<li>Note: by default, the package installs into a central location which will require you to enter your system username and password during the process.</li>
+</ul></li>
+</ul>
+
+<h1 id="testing-the-installation">Testing the installation</h1>
+
+<p>You can test that your installation went well by running the <code>python3</code> interpreter in the <code>Terminal</code>.</p>
+
+<p>Enter the following into the terminal and press <code>enter</code>:</p>
+
+<pre><code>    python3
+</code></pre>
+
+<p>You should then see something like this:</p>
+
+<pre><code>    Python 3.6.0 (v3.6.0:41df79263a11, Dec 22 2016, 17:23:13) 
+    [GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+    Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+    &gt;&gt;&gt; quit()
+</code></pre>
+
+<p>While inside the python interpreter:</p>
+
+<ul>
+<li>The <code>&gt;&gt;&gt;</code> indicates that you are at a Python prompt.</li>
+<li>You can exit the Python prompt by typing <code>quit()</code> and pressing enter or by using <code>CTRL+d</code>.</li>
+<li>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</li>
+</ul>
+
+<h1 id="installing-a-text-editor-sublime">Installing a Text Editor (Sublime)</h1>
+
+<p>While you can absolutely write Python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we&rsquo;ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+
+<p><a href="http://www.sublimetext.com/3">Download it from here</a></p>
+
+<p>Once downloaded, install it as you would any other OS X application. Being explicit, this means double-clicking the downloaded <code>dmg</code> file, letting it open up, and subsequently dragging the <code>Sublime Text</code> application into your <code>Applications</code> folder.</p>
+
+<p>Be sure that you&rsquo;ve set tabs equal to 4 spaces and the tabs to spaces setting is set to True.</p>
+
+<ol>
+<li>Go <strong>Sublime Text &gt; Preferences &gt; Settings</strong>.</li>
+<li>In the <code>Preferences.sublime - settings-User</code> file, paste the following. This ensures that when you hit the Tab button on your keyboard, your text editor will do the equivalent of typing four spaces.</li>
+</ol>
+
+<pre><code>{
+
+    // The number of spaces a tab is considered equal to
+    &quot;tab_size&quot;: 4,
+
+    // Set to true to insert spaces when tab is pressed
+    &quot;translate_tabs_to_spaces&quot;: true,
+
+    //... rest of file
+
+}
+</code></pre>
+
+<ol>
+<li>Save the file.</li>
+</ol>
+
+<h1 id="practice-navigating-the-computer-from-a-terminal">Practice navigating the computer from a Terminal</h1>
+
+<p>The way your computer organizes storage is called a filesystem. This filesystem is organized like a tree with folders (also called <code>directories</code>) and <code>files</code>. The highest point in the tree is the <em>root</em> directory located at <code>/</code>. Everything you can access on your computer lives within the sub-directories of this root directory.</p>
+
+<p>We often navigate the filesystem graphically (using Finder) where we can click and move deeper and across this directory tree. We can do that exact same navigation from the command line.</p>
+
+<p>To do this, there are three commands that we&rsquo;ll be using:</p>
+
+<ul>
+<li><code>ls</code> lists the contents of a directory (&ldquo;what&rsquo;s in this folder?&rdquo;).</li>
+<li><code>pwd</code> prints the full directory path to your current directory. It stands for &ldquo;print working directory.&rdquo; (&ldquo;where am I?&rdquo;)</li>
+<li><code>cd</code> moves you into a new directory (it stands for &ldquo;change directory&rdquo;).
+
+<ul>
+<li><code>cd folder_name</code> - Go into <code>folder_name</code> directory.</li>
+<li><code>cd ..</code> - Go up one level in the folder heirarchy.</li>
+</ul></li>
+</ul>
+
+<p>Let&rsquo;s practice using these commands.</p>
+
+<ol>
+<li>Open up a Terminal. (hint: it&rsquo;s in <code>Applications/Utilities</code>)</li>
+<li>Type each of these commands and hit <code>enter</code>:</li>
+</ol>
+
+<p>{% highlight bash %}ls{% endhighlight %}</p>
+
+<p>This lists all the files in your home directory.</p>
+
+<p><code>pwd</code>
+This displays the full directory path to your current directory, which is your home directory.</p>
+
+<p><code>cd /</code>
+This will change you into the <code>/</code> (root) directory.</p>
+
+<p><code>ls</code>
+This lists the contents of the <code>/</code> (root) directory.</p>
+
+<p><code>cd Users</code>
+This will change you into the home subdirectory of the <code>/</code> (root) directory.</p>
+
+<p><code>ls</code>
+You should see a list of all the computer&rsquo;s users&rsquo; home directories (and possibly a Shared folder).</p>
+
+<p><code>pwd</code>
+This displays the full directory path to your current directory, which in this case is <code>/Users</code>.</p>
+
+<p><code>cd ..</code>
+Note <code>..</code> is a relative location meaning &ldquo;parent directory&rdquo;. You were in <code>/Users</code>, so now you have moved up to your &ldquo;parent&rdquo;, <code>/</code>, the root directory.</p>
+
+<p><code>ls</code>
+This lists the contents of the root directory, confirming where you are.</p>
+
+<p><code>cd ~</code>
+Just like how <code>..</code> means &ldquo;parent directory&rdquo;, <code>~</code> means &ldquo;home&rdquo; directory. When you execute this command, you&rsquo;ll change back to your home directory, where all your user files are.</p>
+
+<h4 id="tips">Tips</h4>
+
+<ol>
+<li><p>You can use <code>tab</code> to auto-complete directories, files, and programs. So from inside the root directory <code>/</code>, if you type <code>cd Us</code> and press the <code>tab</code> key, the command prompt will auto-complete the directory name, and you can then hit <code>enter</code> to change into the <code>/Users</code> directory.</p></li>
+
+<li><p>The command prompt maintains a command history. You can use the up arrow to cycle through old commands. You can also see a list of your history by using the <code>history</code> command.</p></li>
+
+<li><p>If you&rsquo;d like to open a Finder window wherever you are in the Terminal, you can use the <code>open .</code> command. Turns out <code>.</code> is another &ldquo;special place&rdquo; that means &ldquo;the current directory&rdquo;. So this command opens the current directory, which OS X generally does with the help of Finder.</p></li>
+
+<li><p>If you&rsquo;d like to change to a specific location in the Terminal, and you have a Finder window open already to that place, you can type in <code>cd</code> to the Terminal, drag the little blue folder at the top of the Finder window into the Terminal, and then press <code>enter</code>.</p></li>
+</ol>
+
+<h4 id="check-your-understanding">Check your understanding</h4>
+
+<p>Answer these questions. Experiment at the command line if you need to! If you aren&rsquo;t sure about an answer, ask a helper.</p>
+
+<ul>
+<li>What directory are you in after starting a new command line prompt?</li>
+<li>After starting a new command line prompt, how would you get to the root directory?</li>
+<li>How do you check what files and directories are in your current working directory?</li>
+<li>If you are in directory <code>/</code>, and you want to get to <code>/Users/Shared/</code>, how would you do that?</li>
+<li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you&rsquo;ve run the command before)</li>
+<li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+
+<h4 id="success">Success!</h4>
+
+<p>You&rsquo;ve practiced using <code>ls</code> and <code>cd</code> to navigate your computer&rsquo;s filesystem using Terminal.</p>
+
+<h1 id="start-learning-python">Start learning Python!</h1>
+
+<p>Go through this <a href="/day_one_tutorial/">self-directed tutorial</a> to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.</p>
+
+<h1 id="get-dependencies-installed-for-the-projects">Get dependencies installed for the projects</h1>
+
+<ul>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip">Wordplay Project</a>.</li>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip">Colorwall Project</a> for Python 3.<br /></li>
+</ul>
+
+<h1 id="practice">Practice</h1>
+
+<p>Try some <a href="/practice/">practice exercises</a>.  If you&rsquo;ve been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.</p>
+
+<h1 id="checkoff">Checkoff</h1>
+
+<p>Have an instructor or assistant <a href="/setupcheckoff/">check you off</a>.</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.redmondpython.com%2fsetupmac%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fwww.redmondpython.com%2fsetupmac%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.redmondpython.com%2fsetupmac%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fwww.redmondpython.com%2fsetupmac%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>Adapted from the <a href="http://phillypythonworkshop.github.io/">Philly PUG&rsquo;s workshop</a>.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/first-redmond-python-user-group-meetup/">First Redmond Python User Group Meetup</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://www.redmondpython.com/setup">1. Machine Setup Steps</a></li>
+      
+      <li><a href="https://www.redmondpython.com/practice">2. Practice</a></li>
+      
+      <li><a href="https://www.redmondpython.com/projects">3. Projects</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_one_lesson">4. Full Workshop - Day 1</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_two_lesson">5. Full Workshop - Day 2</a></li>
+      
+      <li><a href="https://www.redmondpython.com/contributing">6. Contributing to Redmondpython.com</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      This workshop was initially created by <a href="http://phillypythonworkshop.github.io/">Philly&rsquo;s Python User Group</a> and adapted by the <a href="https://www.meetup.com/Redmond-Python-User-Group/">Redmond Python User Group</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

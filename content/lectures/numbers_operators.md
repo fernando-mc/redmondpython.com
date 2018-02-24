@@ -140,7 +140,7 @@ Assume `a = 5` and `b = 10`.
 
 |Operator|Description|Example|
 |:---:|---|---|
-|`==`|If the values of two operands are equal, then the condition becomes true.| `a == b` evaluates to false.|
+|`==`|If the values of two operands are equal, then the condition becomes true.|`a == b` evaluates to false.|
 |`!=`|If values of two operands are not equal, then condition becomes true.|`a != b` is true.|
 |`>`|If the value of left operand is greater than the value of right operand, then condition becomes true.|`a > b` is not true.|
 |`<`|If the value of left operand is less than the value of right operand, then condition becomes true.|`a < b` is true.|
@@ -198,12 +198,12 @@ a = 5
 b = 10
 list = [1, 2, 3, 4, 5 ];
 
-if ( a in list ):
+if a in list:
    print("a is in your list!")
 else:
    print("a is not in your list!")
 
-if ( b not in list ):
+if b not in list:
    print("b is not in your list!")
 else:
    print("b is in your list!")
@@ -257,7 +257,6 @@ TBD
 # Review of Key Points
 
 - You can use the Python interpreter to do basic math.
-- There are many different operators available to you.
 - Important: `=` assigns a value, and `==` tests for equality.
 - We can convert between integers and floats using `int()` and `float()`
 - We can check the type of any value or variable by using `type()`

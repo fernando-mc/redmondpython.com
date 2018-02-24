@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Redmond Python</title>
+    <link>https://www.redmondpython.com/post/</link>
+    <description>Recent content in Posts on Redmond Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This workshop was initially created by [Philly&#39;s Python User Group](http://phillypythonworkshop.github.io/) and adapted by the [Redmond Python User Group](https://www.meetup.com/Redmond-Python-User-Group/).</copyright>
+    <lastBuildDate>Sat, 03 Feb 2018 15:59:39 -0800</lastBuildDate>
+    
+	<atom:link href="https://www.redmondpython.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Redmond Python User Group Meetup</title>
+      <link>https://www.redmondpython.com/first-redmond-python-user-group-meetup/</link>
+      <pubDate>Sat, 03 Feb 2018 15:59:39 -0800</pubDate>
+      
+      <guid>https://www.redmondpython.com/first-redmond-python-user-group-meetup/</guid>
+      <description>&lt;p&gt;On February 6 we&amp;rsquo;ll be having the &lt;a href=&#34;https://www.meetup.com/Redmond-Python-User-Group/&#34;&gt;first meeting&lt;/a&gt; for the Redmond Python user group.&lt;/p&gt;
+
+&lt;p&gt;Yay!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For anyone joining us, here&amp;rsquo;s what we&amp;rsquo;ll be doing!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

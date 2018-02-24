@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Setup - Linux" />
+<meta property="og:description" content="Here&rsquo;s what you need to do to set up your Linux machine.
+Download and Install Python Most Linux machines have both Python 2 and Python 3 pre-installed. Open a Terminal window and type python3 at the prompt. You should see something like the example in the Python shell section below. If you don&rsquo;t, please see an instructor.
+Prepare a text editor While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.redmondpython.com/setuplinux/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup - Linux"/>
+<meta name="twitter:description" content="Here&rsquo;s what you need to do to set up your Linux machine.
+Download and Install Python Most Linux machines have both Python 2 and Python 3 pre-installed. Open a Terminal window and type python3 at the prompt. You should see something like the example in the Python shell section below. If you don&rsquo;t, please see an instructor.
+Prepare a text editor While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features."/>
+<meta name="generator" content="Hugo 0.36.1" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Setup - Linux",
+  "url": "https://www.redmondpython.com/setuplinux/",
+  "wordCount": "933",
+  "datePublished": "0001-01-01T00:00:00&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Fernando Medina Corey"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://www.redmondpython.com/setuplinux/">
+
+    <title>Setup - Linux | Redmond Python</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://www.redmondpython.com/css/style.css" rel="stylesheet" integrity="sha384-HjEPigLMLBzVQsUi6JWp9tmxJtBimdClDBxwZrwZR&#43;VE3s11/PtFYOrLClxIv2SG" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://www.redmondpython.com/">Home</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/day_one_lesson">2-Day Workshop</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/setup">Machine Setup</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/short_workshop">Short Workshop</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://www.redmondpython.com/" rel="home">Redmond Python</a></h1>
+        <p class="lead blog-description">The Python User Group of Redmond, WA</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://www.redmondpython.com/setuplinux/">Setup - Linux</a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by Fernando Medina Corey</p>
+  </header>
+  
+
+<p>Here&rsquo;s what you need to do to set up your Linux machine.</p>
+
+<h1 id="download-and-install-python">Download and Install Python</h1>
+
+<p>Most Linux machines have both Python 2 and Python 3 pre-installed. Open a Terminal window and type <code>python3</code> at the prompt. You should see something like the example in the Python shell section below. If you don&rsquo;t, please see an instructor.</p>
+
+<h1 id="prepare-a-text-editor">Prepare a text editor</h1>
+
+<p>While you can absolutely write python code in any text editor, it is a lot easier to use one that is aware of code content and provides relevant features. To that end, we&rsquo;ll be using Sublime Text 3. While there are a multitude of other options, Sublime 3 provides a good blend of simplicity and functionality.</p>
+
+<p><a href="http://www.sublimetext.com/3">Download it from here</a></p>
+
+<p>Install as you would any other program. Be sure that you&rsquo;ve set tabs equal to 4 spaces and the tabs to spaces setting is set to True.</p>
+
+<p>Be sure that you&rsquo;ve set tabs equal to 4 spaces and the tabs to spaces setting is set to True. In the Sublime Text Menu, add content below Preferences &gt; Settings - User. Make sure that it is inside the curly braces at the top of your file.</p>
+
+<pre><code>{
+
+    // The number of spaces a tab is considered equal to
+    &quot;tab_size&quot;: 4,
+
+    // Set to true to insert spaces when tab is pressed
+    &quot;translate_tabs_to_spaces&quot;: true,
+
+
+    ... rest of file
+
+}
+</code></pre>
+
+<ol>
+<li>Save the file.</li>
+</ol>
+
+<h1 id="practice-starting-exiting-the-python-shell">Practice starting &amp; exiting the Python shell</h1>
+
+<ol>
+<li>Open a command prompt.</li>
+<li>To start Python, type <code>python3</code> at the command prompt and hit enter. You should see something like:</li>
+</ol>
+
+<pre><code>Python 3.4.0 (default, Apr 11 2014, 13:05:11)
+[GCC 4.8.2] on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre>
+
+<pre><code>The `&gt;&gt;&gt;` indicates that you are at a Python prompt.
+</code></pre>
+
+<ol>
+<li>Exit the Python prompt by typing <code>exit()</code> and hitting enter.</li>
+</ol>
+
+<p>Practice doing this a few times until you are comfortable entering and exiting the Python shell.</p>
+
+<h1 id="practice-navigating-the-computer-from-a-command-prompt">Practice navigating the computer from a command prompt</h1>
+
+<p>The filesystem on your computer is like a tree made up of folders (also called &ldquo;directories&rdquo;) and files. The filesystem has a root directory called <code>/</code>, and everything on your computer lives in subdirectories of this root directory.</p>
+
+<p>We often navigate the filesystem graphically by clicking on graphical folders. We can do the exact same navigation from the command line.
+There are three commands that we&rsquo;ll be using at a command prompt to navigate the filesystem on your computer:</p>
+
+<ul>
+<li><code>ls</code> lists the contents of a directory (&ldquo;what&rsquo;s in this folder?&rdquo;).</li>
+<li><code>pwd</code> prints the full directory path to your current directory. It stands for &ldquo;print working directory.&rdquo; (&ldquo;where am I?&rdquo;)</li>
+<li><code>cd</code> moves you into a new directory (it stands for &ldquo;change directory&rdquo;).
+
+<ul>
+<li><code>cd folder_name</code> - Go into <code>folder_name</code> directory.</li>
+<li><code>cd ..</code> - Go up one level in the folder heirarchy.</li>
+</ul></li>
+</ul>
+
+<p>Let&rsquo;s practice using these commands.</p>
+
+<ol>
+<li>Open a command prompt. You can find the Terminal application at Applications/Accessories/Terminal, or it may already be on your menu bar.</li>
+<li>Type each of these commands and hit enter:</li>
+</ol>
+
+<p><code>ls</code>
+This lists all the files in your home directory.</p>
+
+<p><code>pwd</code>
+This displays the full directory path to your current directory, which is your home directory.</p>
+
+<p><code>cd /</code>
+This will change you into the / root directory.</p>
+
+<p><code>ls</code>
+This lists the contents of the / root directory.</p>
+
+<p><code>cd home</code>
+This will change you into the home subdirectory of the / root directory.</p>
+
+<p><code>ls</code>
+You should see a list of all the files in /home, including the directory for your username &ndash; your home directory.</p>
+
+<p><code>pwd</code>
+This displays the full directory path to your current directory, /home.</p>
+
+<p><code>cd ..</code>
+.. means &ldquo;parent directory&rdquo;, so this command moved you up to the parent directory. You were in /home, so now you are in /, the root directory.</p>
+
+<p><code>ls</code>
+This lists the contents of the root directory, confirming where you are.</p>
+
+<h4 id="tips">Tips</h4>
+
+<ul>
+<li>You can use <strong>Tab</strong> to auto-complete directory and file names. So if you&rsquo;re inside the root directory and you type <code>cd ho</code> and hit Tab, the command prompt will auto-complete the directory name, and you can then hit enter to change into the /home directory.</li>
+<li>The command prompt maintains a command history. You can use the up arrow to cycle through old commands. Open a command prompt and hit the up key a few times.</li>
+</ul>
+
+<h4 id="check-your-understanding">Check your understanding</h4>
+
+<p>Answer these questions. Experiment at the command line if you need to! If you aren&rsquo;t sure about an answer, ask a helper.</p>
+
+<ul>
+<li>What directory are you in after starting a new command line prompt?</li>
+<li>After starting a new command line prompt, how would you get to the root directory?</li>
+<li>How do you check what files and directories are in your current working directory?</li>
+<li>If you are in directory <code>/home</code>, and you want to get to <code>/home/PythonWork/projects</code>, how would you do that?</li>
+<li>What are 2 ways to avoid typing out a full navigation command? (hint: one requires that you&rsquo;ve run the command before)</li>
+<li>What is the difference between a command prompt and a Python prompt?</li>
+</ul>
+
+<h4 id="success">Success!</h4>
+
+<p>You&rsquo;ve practiced using dir and cd to navigate your computer&rsquo;s filesystem from the command prompt.</p>
+
+<h1 id="start-learning-python">Start learning Python!</h1>
+
+<p>Go through this <a href="/day_one_tutorial/">self-directed tutorial</a> to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.</p>
+
+<h1 id="get-dependencies-installed-for-the-projects">Get dependencies installed for the projects</h1>
+
+<ul>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Wordplay/archive/master.zip">Wordplay Project</a>.</li>
+<li>Download the <a href="https://github.com/PhillyPythonWorkshop/Colorwall3/archive/master.zip">Colorwall Project</a> for Python 3.</li>
+</ul>
+
+<h1 id="practice">Practice</h1>
+
+<p>Try some <a href="/practice/">practice exercises</a>. If you&rsquo;ve been working on any other tutorials, feel free to go to those too, and ask an instructor to help anywhere you get stuck.</p>
+
+<h1 id="checkoff">Checkoff</h1>
+
+<p>Have an instructor or assistant <a href="/setupcheckoff/">check you off</a>.</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.redmondpython.com%2fsetuplinux%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fwww.redmondpython.com%2fsetuplinux%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.redmondpython.com%2fsetuplinux%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fwww.redmondpython.com%2fsetuplinux%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>Adapted from the <a href="http://phillypythonworkshop.github.io/">Philly PUG&rsquo;s workshop</a>.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/first-redmond-python-user-group-meetup/">First Redmond Python User Group Meetup</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://www.redmondpython.com/setup">1. Machine Setup Steps</a></li>
+      
+      <li><a href="https://www.redmondpython.com/practice">2. Practice</a></li>
+      
+      <li><a href="https://www.redmondpython.com/projects">3. Projects</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_one_lesson">4. Full Workshop - Day 1</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_two_lesson">5. Full Workshop - Day 2</a></li>
+      
+      <li><a href="https://www.redmondpython.com/contributing">6. Contributing to Redmondpython.com</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      This workshop was initially created by <a href="http://phillypythonworkshop.github.io/">Philly&rsquo;s Python User Group</a> and adapted by the <a href="https://www.meetup.com/Redmond-Python-User-Group/">Redmond Python User Group</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

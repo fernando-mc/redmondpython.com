@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="Numbers and Operators Schedule  Overview Basic Syntax &amp; Rules Math Operators Utility Functions Examples Review Exercises Additional Resources  Overview Number data types store numeric values. They are immutable data types, means that changing the value of a number data type results in a new object.
+Basic Syntax &amp; Rules There are two numerical types that we will learn about:
+ integers: Positive or negative whole numbers with no decimal point." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.redmondpython.com/lectures/numbers_operators/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Numbers and Operators Schedule  Overview Basic Syntax &amp; Rules Math Operators Utility Functions Examples Review Exercises Additional Resources  Overview Number data types store numeric values. They are immutable data types, means that changing the value of a number data type results in a new object.
+Basic Syntax &amp; Rules There are two numerical types that we will learn about:
+ integers: Positive or negative whole numbers with no decimal point."/>
+<meta name="generator" content="Hugo 0.36.1" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "https://www.redmondpython.com/lectures/numbers_operators/",
+  "wordCount": "1265",
+  "datePublished": "0001-01-01T00:00:00&#43;00:00",
+  "author": {
+    "@type": "Person",
+    "name": "Fernando Medina Corey"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="https://www.redmondpython.com/lectures/numbers_operators/">
+
+    <title> | Redmond Python</title>
+
+    <!-- combined, minified CSS -->
+    <link href="https://www.redmondpython.com/css/style.css" rel="stylesheet" integrity="sha384-HjEPigLMLBzVQsUi6JWp9tmxJtBimdClDBxwZrwZR&#43;VE3s11/PtFYOrLClxIv2SG" crossorigin="anonymous">
+
+    
+
+    
+
+    
+
+    
+
+  </head>
+
+  <body>
+
+    
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="nav blog-nav">
+          <a class="nav-link " href="https://www.redmondpython.com/">Home</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/day_one_lesson">2-Day Workshop</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/setup">Machine Setup</a>
+          
+          
+          <a class="nav-link" href="https://www.redmondpython.com/short_workshop">Short Workshop</a>
+          
+          
+        </nav>
+      </div>
+    </div>
+    
+
+    
+    <header class="blog-header">
+      <div class="container">
+        <h1 class="blog-title"><a href="https://www.redmondpython.com/" rel="home">Redmond Python</a></h1>
+        <p class="lead blog-description">The Python User Group of Redmond, WA</p>
+      </div>
+    </header>
+    
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title"><a href="https://www.redmondpython.com/lectures/numbers_operators/"></a></h2>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by Fernando Medina Corey</p>
+  </header>
+  
+
+<h1 id="numbers-and-operators">Numbers and Operators</h1>
+
+<h1 id="schedule">Schedule</h1>
+
+<ul>
+<li>Overview</li>
+<li>Basic Syntax &amp; Rules</li>
+<li>Math</li>
+<li>Operators</li>
+<li>Utility Functions</li>
+<li>Examples</li>
+<li>Review</li>
+<li>Exercises</li>
+<li>Additional Resources</li>
+</ul>
+
+<h1 id="overview">Overview</h1>
+
+<p>Number data types store numeric values. They are immutable data types, means that changing the value of a number data type results in a new object.</p>
+
+<h1 id="basic-syntax-rules">Basic Syntax &amp; Rules</h1>
+
+<p>There are two numerical types that we will learn about:</p>
+
+<ul>
+<li><strong>integers</strong>: Positive or negative whole numbers with no decimal point.</li>
+<li><strong>floats</strong>: Written with a decimal point dividing the integer and fractional parts.</li>
+</ul>
+
+<h2 id="math">Math</h2>
+
+<p>Math in Python looks a lot like math with a calculator.</p>
+
+<h3 id="addition">Addition</h3>
+
+<pre><code>&gt;&gt;&gt; 2 + 2
+&gt;&gt;&gt; 1.65 + 2.15
+&gt;&gt;&gt; 2 + 1.65
+</code></pre>
+
+<h3 id="subtraction">Subtraction</h3>
+
+<pre><code>&gt;&gt;&gt; 12 - 5
+&gt;&gt;&gt; 45.9 - 25.3
+&gt;&gt;&gt; 2 - -4
+</code></pre>
+
+<h3 id="multiplication">Multiplication</h3>
+
+<p>Multiplication uses the * (asterisk or star) symbol.</p>
+
+<pre><code>&gt;&gt;&gt; 6 * 7
+&gt;&gt;&gt; 5.6 * 4.3
+&gt;&gt;&gt; 6 * -5
+</code></pre>
+
+<h3 id="division">Division</h3>
+
+<p>Division uses the / symbol.</p>
+
+<pre><code>&gt;&gt;&gt; 12/3
+&gt;&gt;&gt; 16/5
+&gt;&gt;&gt; 10/-5
+</code></pre>
+
+<blockquote>
+<p><strong>Note</strong>: If you’ve used Python 2, you’ll see that division works differently in Python 3. Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.</p>
+</blockquote>
+
+<p>To perform floor division in Python 3, use the following syntax:</p>
+
+<pre><code>&gt;&gt;&gt; 16//5
+&gt;&gt;&gt; 50//4
+</code></pre>
+
+<h3 id="modulus">Modulus</h3>
+
+<p>Thinking back to long division that you may have learned in school, the modulus is the “remainder” after perfoming division. It uses the % symbol.</p>
+
+<pre><code>&gt;&gt;&gt; 16%5
+&gt;&gt;&gt; 50%4
+</code></pre>
+
+<h3 id="order-of-operations">Order of Operations</h3>
+
+<p>Order of operations works just like you learned in math class - Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.</p>
+
+<pre><code>&gt;&gt;&gt; 5 + 4 * 3
+&gt;&gt;&gt; (5 + 4) * 3
+</code></pre>
+
+<h3 id="storing-numbers-in-variables">Storing Numbers in Variables</h3>
+
+<p>A lot of work gets done in Python using variables. A variable consists of an identifier (the variable’s name) and a value stored in the variable – any kind of value, not just a number. We&rsquo;ll talk more about valuables later, but this is how numbers are stored in variables:</p>
+
+<pre><code>&gt;&gt;&gt; x = 1
+&gt;&gt;&gt; x
+&gt;&gt;&gt; y = 2.5
+&gt;&gt;&gt; y
+</code></pre>
+
+<p>Note the <code>=</code> sign. This leads us to an important topic.</p>
+
+<h1 id="operators">Operators</h1>
+
+<h2 id="assignment">Assignment</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><code>=</code></td>
+<td>Assigns values from right side operands to left side operand</td>
+<td><code>c = a + b</code> assigns value of <code>a + b</code> into <code>c</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>+=</code> Add AND</td>
+<td>Adds right operand to the left operand and assign the result to left operand</td>
+<td><code>c += a</code> is equivalent to <code>c = c + a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>-=</code> Subtract AND</td>
+<td>Subtracts right operand from the left operand and assign the result to left operand</td>
+<td><code>c -= a</code> is equivalent to <code>c = c - a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>*=</code> Multiply AND</td>
+<td>Multiplies right operand with the left operand and assign the result to left operand</td>
+<td><code>c *= a</code> is equivalent to <code>c = c * a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>/=</code> Divide AND</td>
+<td>Divides left operand with the right operand and assign the result to left operand</td>
+<td><code>c /= a</code>  is equivalent to <code>c = c / a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>%=</code> Modulus AND</td>
+<td>Calculates modulus using two operands and assign the result to left operand</td>
+<td><code>c %= a</code> is equivalent to <code>c = c % a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>**=</code> Exponent AND</td>
+<td>Performs exponential calculation on operators and assign value to the left operand</td>
+<td><code>c **= a</code> is equivalent to <code>c = c ** a</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>//=</code> Floor Division</td>
+<td>Performs floor division on operators and assign value to the left operand</td>
+<td><code>c //= a</code> is equivalent to <code>c = c // a</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="assignment-operator-exercise">Assignment Operator Exercise</h3>
+
+<p>Enter the following in the interpreter:</p>
+
+<pre><code>&gt;&gt;&gt; a = 21
+&gt;&gt;&gt; b = 10
+&gt;&gt;&gt; c = 0
+&gt;&gt;&gt; c = a + b
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c += a
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c *= a
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c /= a
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c = 2
+&gt;&gt;&gt; c %= a
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c **= a
+&gt;&gt;&gt; c
+&gt;&gt;&gt; c //= a
+&gt;&gt;&gt; c
+</code></pre>
+
+<h2 id="comparison">Comparison</h2>
+
+<p>Assume <code>a = 5</code> and <code>b = 10</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><code>==</code></td>
+<td>If the values of two operands are equal, then the condition becomes true.</td>
+<td><code>a == b</code> evaluates to false.</td>
+</tr>
+
+<tr>
+<td align="center"><code>!=</code></td>
+<td>If values of two operands are not equal, then condition becomes true.</td>
+<td><code>a != b</code> is true.</td>
+</tr>
+
+<tr>
+<td align="center"><code>&gt;</code></td>
+<td>If the value of left operand is greater than the value of right operand, then condition becomes true.</td>
+<td><code>a &gt; b</code> is not true.</td>
+</tr>
+
+<tr>
+<td align="center"><code>&lt;</code></td>
+<td>If the value of left operand is less than the value of right operand, then condition becomes true.</td>
+<td><code>a &lt; b</code> is true.</td>
+</tr>
+
+<tr>
+<td align="center"><code>&gt;=</code></td>
+<td>If the value of left operand is greater than or equal to the value of right operand, then condition becomes true.</td>
+<td><code>a &gt;= b</code> is not true.</td>
+</tr>
+
+<tr>
+<td align="center"><code>&lt;=</code></td>
+<td>If the value of left operand is less than or equal to the value of right operand, then condition becomes true.</td>
+<td><code>a &lt;= b</code> is true.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p><strong>Key Point</strong>: <code>=</code> assigns a value, and <code>==</code> tests for equality.</p>
+</blockquote>
+
+<p>Exercise:</p>
+
+<pre><code>&gt;&gt;&gt; a = 5
+&gt;&gt;&gt; b = 10
+&gt;&gt;&gt; a == b
+&gt;&gt;&gt; a != b
+&gt;&gt;&gt; b = 5
+&gt;&gt;&gt; a == b
+&gt;&gt;&gt; a != b
+</code></pre>
+
+<h2 id="logical">Logical</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><code>and</code></td>
+<td>If both the operands are true then condition becomes true.</td>
+<td><code>x&gt;4 and y&lt;5</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>or</code></td>
+<td>If any of the two operands are non-zero then condition becomes true.</td>
+<td><code>x&gt;4 or y&lt;5</code></td>
+</tr>
+
+<tr>
+<td align="center"><code>not</code></td>
+<td>Used to reverse the logical state of its operand.</td>
+<td><code>not(x and y)</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="identity">Identity</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><code>is</code></td>
+<td>Evaluates to true if the variables on either side of the operator point to the same object.</td>
+<td>See below.</td>
+</tr>
+
+<tr>
+<td align="center"><code>is not</code></td>
+<td>Evaluates to false if the variables on either side of the operator point to the same object.</td>
+<td>See below.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Exercise:</p>
+
+<pre><code>&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; b = 1
+&gt;&gt;&gt; a is b
+&gt;&gt;&gt; b = 2
+&gt;&gt;&gt; a is b
+</code></pre>
+
+<h2 id="membership">Membership</h2>
+
+<table>
+<thead>
+<tr>
+<th align="center">Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center"><code>in</code></td>
+<td>Evaluates to true if it finds a variable in the specified sequence and false otherwise.</td>
+<td>x in y is true if x is found in sequence y</td>
+</tr>
+
+<tr>
+<td align="center"><code>not in</code></td>
+<td>Evaluates to true if it does not finds a variable in the specified sequence and false otherwise.</td>
+<td>x not in y evaluates to true if x is not in sequence y</td>
+</tr>
+</tbody>
+</table>
+
+<p>You don&rsquo;t need to understand lists or the loop structure here&ndash;this is just to demonstrate how <code>in</code> and <code>not in</code> can be used:</p>
+
+<pre><code class="language-py">a = 5
+b = 10
+list = [1, 2, 3, 4, 5 ];
+
+if ( a in list ):
+   print(&quot;a is in your list!&quot;)
+else:
+   print(&quot;a is not in your list!&quot;)
+
+if ( b not in list ):
+   print(&quot;b is not in your list!&quot;)
+else:
+   print(&quot;b is in your list!&quot;)
+</code></pre>
+
+<h1 id="utility-functions">Utility Functions</h1>
+
+<p>We&rsquo;ll talk more about functions in a different lecture, but for now we&rsquo;ll introduce a few small functions that can help us with numerical types. We can convert between numerical types with ease:</p>
+
+<p>Converts 5.0 to 5:</p>
+
+<pre><code>&gt;&gt;&gt; int(5.0)
+</code></pre>
+
+<p>Converts 4 to 4.0:</p>
+
+<pre><code>&gt;&gt;&gt; float(4)
+</code></pre>
+
+<p>We can also use the handy built-in <code>type()</code> function to determine the type of a given variable.</p>
+
+<p>Convert from float to int:</p>
+
+<pre><code>&gt;&gt;&gt; x = 5.5
+&gt;&gt;&gt; x
+&gt;&gt;&gt; type(x)
+&gt;&gt;&gt; x = int(x)
+&gt;&gt;&gt; x
+&gt;&gt;&gt; type(x)
+</code></pre>
+
+<p>Convert from int to float:</p>
+
+<pre><code>&gt;&gt;&gt; y = 4
+&gt;&gt;&gt; y
+&gt;&gt;&gt; type(y)
+&gt;&gt;&gt; y = float(y)
+&gt;&gt;&gt; y
+&gt;&gt;&gt; type(y)
+</code></pre>
+
+<h1 id="example-1">Example 1</h1>
+
+<p>TBD</p>
+
+<h1 id="example-2">Example 2</h1>
+
+<p>TBD</p>
+
+<h1 id="example-3">Example 3</h1>
+
+<p>TBD</p>
+
+<h1 id="review-of-key-points">Review of Key Points</h1>
+
+<ul>
+<li>You can use the Python interpreter to do basic math.</li>
+<li>There are many different operators available to you.</li>
+<li>Important: <code>=</code> assigns a value, and <code>==</code> tests for equality.</li>
+<li>We can convert between integers and floats using <code>int()</code> and <code>float()</code></li>
+<li>We can check the type of any value or variable by using <code>type()</code></li>
+</ul>
+
+<h1 id="exercises">Exercises</h1>
+
+<p>TBD</p>
+
+<h1 id="additional-resources">Additional Resources</h1>
+
+<p>TBD</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fwww.redmondpython.com%2flectures%2fnumbers_operators%2f" title="Share on Facebook"><span class="fa fa-facebook fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://plus.google.com/share?url=https%3a%2f%2fwww.redmondpython.com%2flectures%2fnumbers_operators%2f" title="Share on Google+"><span class="fa fa-google-plus fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.redmondpython.com%2flectures%2fnumbers_operators%2f" title="Share on LinkedIn"><span class="fa fa-linkedin fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/home?status=https%3a%2f%2fwww.redmondpython.com%2flectures%2fnumbers_operators%2f" title="Tweet this"><span class="fa fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  <section class="sidebar-module sidebar-module-inset">
+    <h4>About</h4>
+    <p>Adapted from the <a href="http://phillypythonworkshop.github.io/">Philly PUG&rsquo;s workshop</a>.</p>
+  </section>
+  
+
+  
+        <section class="sidebar-module">
+    <h4>Recent Posts</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/first-redmond-python-user-group-meetup/">First Redmond Python User Group Meetup</a></li>
+
+    </ol>
+  </section>
+
+  
+
+  
+  <section class="sidebar-module">
+    <h4>Links</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://www.redmondpython.com/setup">1. Machine Setup Steps</a></li>
+      
+      <li><a href="https://www.redmondpython.com/practice">2. Practice</a></li>
+      
+      <li><a href="https://www.redmondpython.com/projects">3. Projects</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_one_lesson">4. Full Workshop - Day 1</a></li>
+      
+      <li><a href="https://www.redmondpython.com/day_two_lesson">5. Full Workshop - Day 2</a></li>
+      
+      <li><a href="https://www.redmondpython.com/contributing">6. Contributing to Redmondpython.com</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p>
+      
+      This workshop was initially created by <a href="http://phillypythonworkshop.github.io/">Philly&rsquo;s Python User Group</a> and adapted by the <a href="https://www.meetup.com/Redmond-Python-User-Group/">Redmond Python User Group</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>
