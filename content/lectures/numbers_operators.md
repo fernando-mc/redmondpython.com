@@ -27,7 +27,7 @@ There are two numerical types that we will learn about:
 
 Math in Python looks a lot like math with a calculator.
 
-## Addition
+### Addition
 
 ```
 >>> 2 + 2
@@ -35,7 +35,7 @@ Math in Python looks a lot like math with a calculator.
 >>> 2 + 1.65
 ```
 
-## Subtraction
+### Subtraction
 
 ```
 >>> 12 - 5
@@ -43,7 +43,7 @@ Math in Python looks a lot like math with a calculator.
 >>> 2 - -4
 ```
 
-## Multiplication
+### Multiplication
 
 Multiplication uses the * (asterisk or star) symbol.
 ```
@@ -52,7 +52,7 @@ Multiplication uses the * (asterisk or star) symbol.
 >>> 6 * -5
 ```
 
-## Division
+### Division
 
 Division uses the / symbol.
 ```
@@ -69,7 +69,7 @@ To perform floor division in Python 3, use the following syntax:
 >>> 50//4
 ```
 
-## Modulus
+### Modulus
 
 Thinking back to long division that you may have learned in school, the modulus is the “remainder” after perfoming division. It uses the % symbol.
 ```
@@ -77,14 +77,14 @@ Thinking back to long division that you may have learned in school, the modulus 
 >>> 50%4
 ```
 
-## Order of Operations
+### Order of Operations
 
 Order of operations works just like you learned in math class - Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.
 ```
 >>> 5 + 4 * 3
 >>> (5 + 4) * 3
 ```
-## Storing Numbers in Variables
+### Storing Numbers in Variables
 
 A lot of work gets done in Python using variables. A variable consists of an identifier (the variable’s name) and a value stored in the variable – any kind of value, not just a number. We'll talk more about valuables later, but this is how numbers are stored in variables:
 ```
@@ -140,7 +140,7 @@ Assume `a = 5` and `b = 10`.
 
 |Operator|Description|Example|
 |:---:|---|---|
-|`==`|If the values of two operands are equal, then the condition becomes true.| `a == b` evaluates to false.|
+|`==`|If the values of two operands are equal, then the condition becomes true.|`a == b` evaluates to false.|
 |`!=`|If values of two operands are not equal, then condition becomes true.|`a != b` is true.|
 |`>`|If the value of left operand is greater than the value of right operand, then condition becomes true.|`a > b` is not true.|
 |`<`|If the value of left operand is less than the value of right operand, then condition becomes true.|`a < b` is true.|
@@ -198,12 +198,12 @@ a = 5
 b = 10
 list = [1, 2, 3, 4, 5 ];
 
-if ( a in list ):
+if a in list:
    print("a is in your list!")
 else:
    print("a is not in your list!")
 
-if ( b not in list ):
+if b not in list:
    print("b is not in your list!")
 else:
    print("b is in your list!")
@@ -257,7 +257,6 @@ TBD
 # Review of Key Points
 
 - You can use the Python interpreter to do basic math.
-- There are many different operators available to you.
 - Important: `=` assigns a value, and `==` tests for equality.
 - We can convert between integers and floats using `int()` and `float()`
 - We can check the type of any value or variable by using `type()`
