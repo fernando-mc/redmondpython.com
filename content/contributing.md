@@ -12,7 +12,11 @@ This is a quick guide on how you can contribute to [Redmondpython.com](http://gi
 
 **The Repo**
 
+<<<<<<< refs/remotes/fernando-mc/master
 The repository is available [here @ Github](http://github.com/fernando-mc/redmondpython.com)
+=======
+The repository is available [here:Github](http://github.com/fernando-mc/redmondpython.com)
+>>>>>>> Update contributing.md
 
 **Requirements**
 
