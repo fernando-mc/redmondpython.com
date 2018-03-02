@@ -5,14 +5,14 @@ title: Contributing to Redmondpython.com
 
 This is a quick guide on how you can contribute to [Redmondpython.com](http://github.com/fernando-mc/redmondpython.com)
 
-- For help with github commands and repository management, here is a [quick guide](https://www.codeschool.com/courses/try-git)
+- For help with git commands and repository management, here is a [quick guide](https://www.codeschool.com/courses/try-git)
 
-- You can also check out [GitKraken](https://www.gitkraken.com/) - a client for Git
+- You can also check out [GitKraken](https://www.gitkraken.com/) - an intuitive client for Git
 
 
 **The Repo**
 
-The repository is available [here](http://github.com/fernando-mc/redmondpython.com)
+The repository is available [here @ Github](http://github.com/fernando-mc/redmondpython.com)
 
 **Requirements**
 
@@ -24,7 +24,7 @@ Running the instance locally is a simple
 
 `$ hugo server` At the root directory of the repo. 
 
-You should get the instance up [at](http://localhost:1313/)
+You should get the instance up [locally](http://localhost:1313/)
 
 **Community**
 
