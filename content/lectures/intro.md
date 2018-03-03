@@ -17,7 +17,7 @@
 Python is an easy-to-write, easy-to-read interpreted scripting language. "Hello world!" looks like this:
 
 ```py
->>>print("Hello world!")
+>>> print("Hello world!")
 Hello world!
 ```
 

@@ -23,7 +23,7 @@ Regardless of your skill level, this page will teach you the following:
 Python is an easy-to-write, easy-to-read interpreted scripting language. "Hello world!" looks like this:
 
 ```py
->>>print("Hello world!")
+>>> print("Hello world!")
 Hello world!
 ```
 
@@ -42,7 +42,7 @@ server.login("youremailusername", "password")
 msg = "/nHello!"
 server.sendmail("you@gmail.com", "yourFriend@hotmail.com", msg)
 ```
-You don't need to understand the syntax. The purpose of this example is simply to show you what you can accomplish in a few lines of Python code.
+You don't need to understand this syntax at this time. The purpose of this example is simply to show you what you can accomplish in a few lines of Python code, which may take dozens of lines in other programming languages.
 
 ### Basic Python Features
 
@@ -72,18 +72,18 @@ Let's get Python installed on your computer.
 
 First, there are two major versions of Python: Python2 and Python3. Python2 is retiring in 2020, and Python3 adds some improvements and new syntax, so we'll be using Python3.
 
-You might already have one of these versions installed on your computer.
+You might already have one of these versions installed on your computer. Let's check:
 
 1. Open a terminal or command prompt.
-  - WIN: Start Menu > Command Prompt.
-  - MAC/Linux: Application > Terminal.
+    - WIN: Start Menu > Command Prompt.
+    - MAC/Linux: Application > Terminal.
 2. Type `python` and hit **ENTER**. Do you see something like this? It means you have Python installed.
-  ```bash
-  Python 3.6.4 (default, Jan  3 2018, 12:27:09)
-  [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
-  Type "help", "copyright", "credits" or "license" for more information.
-  >>>
-  ```
+    ```bash
+    Python 3.6.4 (default, Jan  3 2018, 12:27:09)
+    [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+    ```
 If you get an error, you probably need to install Python. See:
 
 - [Windows](/setupwindows)
@@ -97,7 +97,7 @@ Now that we have Python installed, let's open the Python interpreter. The interp
 1. Open a terminal or command prompt like you did in the previous section.
 2. Type `python` and hit **ENTER**.
 
-Your prompt should look something like:
+Your prompt should look something like (if you don't, let a TA know):
 ```
 Python 3.6.4 (default, Jan  3 2018, 12:27:09)
 [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
@@ -117,10 +117,10 @@ This means that you can type this line in at the `>>>` prompt. Simply enter the 
 
 >**Tip**: Don't copy and paste commands -- type them out. You'll learn far more if you take the time to type everything yourself.
 
-How do we exit the Python interpreter? Easy:
+To exit the interpreter:
 
 1. Type `exit()` or hit `ctrl+d` to exit the Python interpreter and return to the computer's terminal.
-2. Now, reopen the Python interpreter. The key point here is that everything that you entered in that previous Python interpreter session is **lost** between sessions. The data does NOT persist.
+2. Now, reopen the Python interpreter. A key point here is that everything that you entered in that previous Python interpreter session is **lost** between sessions. **The data does NOT persist**.
 
 For now, we'll just be working with Python via the interpreter while we learn the basics. We'll show you later how to write lines of code in a file and run the script at the command line.
 
@@ -148,7 +148,7 @@ Let's do some basic operations in Python to teach you how to interact with the P
 
 1. Open the Python interpreter like we showed you in the previous section.
 2. Type the following lines, noting the output:
-  ```
+  ```py
   >>> 2 + 4
   >>> 5 - 1
   >>> 3 * 4
