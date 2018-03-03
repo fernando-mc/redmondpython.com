@@ -1,4 +1,4 @@
-# Redmond Python Onboarding
+# Redmond Python On-boarding
 
 ## Overview
 
@@ -6,21 +6,23 @@ Welcome!
 
 If you are reading this page, you have expressed an interest in attending the Redmond Python Meetup. The Redmond Python Meetup is for *everyone*--from new programmers to experienced developers.
 
-Experienced programmers can probably go through this page without assistance, as a lot of the concepts will be familiar.
-
-If you're brand new to Python or programming in general, we encourage you to come to a meetup for a guided onboarding session and complete these instructions with a teacher's assistant present to help with any obstacles you might encounter or answer any questions you might have.
-
-### What's on this page?
-
-Regardless of your skill level, this page will teach you the following:
+This page will teach you the following:
 
 - How to install Python on your computer
-- How to use the Python Interpreter and input basic commands
-- How to write and manipulate basic Python data types and applications
+- How to use the Python Interpreter to run Python code
+- How to write and manipulate basic Python data types, functions, and loops
+
+At this point, you have three choices:
+
+|Experience Level|Recommendation
+|:---:|---|
+|"I'm brand new to development and Python."|Come to the meetup for a guided on-boarding session with our TAs where you can complete this page and ask questions as you go.|
+|"I'm new to Python but I have some programming experience."|Feel free to get as far as you can on this page and come to the meetup with questions, or you can come to the meetup and do an on-boarding session with our TAs.|
+|"I'm an experience developer"|Feel free to go through this page on your own and come to the meetup with any questions|
 
 ### About Python
 
-Python is an easy-to-write, easy-to-read interpreted scripting language. "Hello world!" looks like this:
+Python is an easy-to-write, easy-to-read interpreted scripting language. "Hello world!" is one line and looks like this:
 
 ```py
 >>> print("Hello world!")
@@ -37,7 +39,7 @@ Here's a more complex example application that sends an email which does the fol
 
 ```py
 import smtplib
-server = smtplib.SMTP('smtp.gmail.com', 587)
+server = smtplib.SMTP("smtp.gmail.com", 587)
 server.login("youremailusername", "password")
 msg = "/nHello!"
 server.sendmail("you@gmail.com", "yourFriend@hotmail.com", msg)
@@ -46,16 +48,16 @@ You don't need to understand this syntax at this time. The purpose of this examp
 
 ### Basic Python Features
 
-Like any programming language, there's a lot to it. But the following principals are the main ones:
+There are a few characteristics of Python that you should remember:
 
-- **Python is open source**: Anyone can see all of the underlying code and can contribute to the code base.
+- **Python is open source**: Anyone can see all of the underlying code and everyone has the chance to contribute to the code base.
 - **Python is object-oriented**: Everything in Python is an object.
 - **Python is platform-independent**: You can write an application on one operating system and run it on another.
 - **Python has a minimalist design philosophy**: This emphasizes cleanliness and readability, with minimal semicolons and brackets.
 
-### What can you do with Python?
+### What kinds of things can you do with Python?
 
-The sky is the limit, but you can quickly:
+The sky is the limit, but here are some examples:
 
   - Interact with files on your computer
   - Automate tasks as part of a workflow
@@ -68,47 +70,51 @@ The sky is the limit, but you can quickly:
 
 ## Installing Python
 
-Let's get Python installed on your computer.
+First thing's first: let's get Python installed on your computer.
 
-First, there are two major versions of Python: Python2 and Python3. Python2 is retiring in 2020, and Python3 adds some improvements and new syntax, so we'll be using Python3.
+There are two major versions of Python out there in the wild right now: Python 2 and Python 3. Python 2 is retiring in 2020, so we'll be using Python3.
 
-You might already have one of these versions installed on your computer. Let's check:
+In fact, you might already have one of these versions installed on your computer. Let's check:
 
 1. Open a terminal or command prompt.
     - WIN: Start Menu > Command Prompt.
-    - MAC/Linux: Application > Terminal.
-2. Type `python` and hit **ENTER**. Do you see something like this? It means you have Python installed.
+    - MAC/LIN: Application > Terminal.
+2. Type `python` and hit **ENTER**. Do you see something like this? It means you have Python installed on your computer.
     ```bash
     Python 3.6.4 (default, Jan  3 2018, 12:27:09)
     [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     ```
-If you get an error, you probably need to install Python. See:
+If you get an error, you probably need to install Python. Note that you may have Python 2 installed, in which case you'll want to install Python 3. See the following pages for platform-specific instructions on installing Python:
 
 - [Windows](/setupwindows)
 - [MacOS](/setupmac/)
 - [Linux](/setuplinux/)
 
+When you're finished, come back here and continue to the next section.
+
 ## Using the Python Interpreter
 
-Now that we have Python installed, let's open the Python interpreter. The interpreter is where we'll be entering  Python code as we get started:
+Now that we have Python installed, let's open the Python interpreter. The interpreter is a small application that let's us type and run Python easily:
 
 1. Open a terminal or command prompt like you did in the previous section.
 2. Type `python` and hit **ENTER**.
 
-Your prompt should look something like (if you don't, let a TA know):
+Your prompt should look something like the following (if it doesn't, let a TA know):
 ```
 Python 3.6.4 (default, Jan  3 2018, 12:27:09)
 [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
-You'll know you're in the interpreter when you see this prompt:
+You'll know you're in the Python interpreter when you see this prompt:
 ```
 >>>
 ```
-This means the Python interpreter is ready for your input. We can just type Python code directly into this prompt and it will run. Note that as you go through this tutorial, you'll see code samples like this:
+This means the Python interpreter is ready for your input. We can type Python code directly into this prompt and it will execute.
+
+Note that as you go through this on-boarding page, you'll see code samples like this:
 ```
 >>> a = "Hello"
 ```
@@ -122,7 +128,7 @@ To exit the interpreter:
 1. Type `exit()` or hit `ctrl+d` to exit the Python interpreter and return to the computer's terminal.
 2. Now, reopen the Python interpreter. A key point here is that everything that you entered in that previous Python interpreter session is **lost** between sessions. **The data does NOT persist**.
 
-For now, we'll just be working with Python via the interpreter while we learn the basics. We'll show you later how to write lines of code in a file and run the script at the command line.
+For now, we'll just be working with Python via the interpreter while we learn the basics. We'll show you later how to write lines of code in a file and run a full Python script at the command line.
 
 <!-- Commenting out for now, let's use this later
 
@@ -140,7 +146,7 @@ $ python myScript.py
 ```
 For now, let's stick with Interactive Mode. -->
 
-# Getting Started
+# Getting Started with Python Code
 
 ## Basic Operations
 
@@ -154,7 +160,7 @@ Let's do some basic operations in Python to teach you how to interact with the P
   >>> 3 * 4
   >>> 10 / 2
   ```
-  This is how easy it is to interact with the interpreter. This also introduces you to some basic math operations available to you in Python like addition, subtraction, etc. We'll expand on this later.
+  Awesome! This is how easy it is to write and execute Python. This also introduces you to some basic math operations available to you in Python like addition, subtraction, etc. We'll expand on those later.
 
   Now try these:
   ```py
@@ -163,30 +169,39 @@ Let's do some basic operations in Python to teach you how to interact with the P
   >>> 3*4
   >>> 10/2
   ```
-  Same operations. Note that the whitespace between values, in this case, doesn't matter. `2+4` is the same as `2 + 4`.
+  Same operations as before. Note that the whitespace between values, in this case, doesn't matter. In Python, `2+4` is the same as `2 + 4`.
 
 ## Variables
 
-Let's introduce variables. Variables are used to store values--numbers, text, lists, etc., so that we can reference these variables later in our application.
+Next, let's introduce variables. Variables are used to store values--numbers, words, lists of numbers and words, etc. This allows us to reference these variables later in our application. Imagine if you were writing an application and wanted to display your company name 20 times in 20 different pages. Instead of writing your company name out 20 times, you can write it once and store it in a variable, and then reference the variable wherever you need it.
 
-Let's create a few variables that store some simple numbers. We'll use the `=` symbol as our assignment operator.
+### Storing Numbers
+
+Let's create a few variables that store some simple numbers. We'll use the `=` symbol to store values. This equals sign is our assignment operator.
 ```py
 >>> x = 4
 >>> y = 2
 >>> print(x + y)
 ```
-Above, we assigned the number 4 to the variable "x" and the number 2 to "y". We then called the "print" function to print the sum. Note that we don't have to declare our variables as "integers." Python will assign the type automatically when we run our program ("at runtime").
+What did we just do?
 
-Numbers are great, but try entering some strings of text, replacing your name below:
+1. We assigned the number 4 to the variable "x" and the number 2 to "y".
+2. We then called the "print" function to print the sum. `print()` is a built-in function that we can access anywhere, and always prints the contents out to the console.
+
+For experienced developers, note that we don't have to tell the interpreter that our variables are numbers. We just assign and run. Python will assign the type automatically when we run our program ("at runtime").
+
+## Storing Strings
+
+Numbers are great, but let's try entering some strings of text. Go ahead and type the following, replacing the value for the `name` variable with your name below:
 ```py
->>> name = "Your Name"
+>>> name = 'Your Name'
 >>> print(name)
->>> fav_food = 'Pasta'
+>>> fav_food = "Pasta"
 >>> print(fav_food)
 >>> long_multiline_string = """When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."""
 >>> print(long_multiline_string)
 ```
-Notice the use of quotes--single, double, or triple quotes are acceptable in Python. Just be consistent! To keep things simple, we'll use double quotes and all of our variables will start with a lowercase letter for now. We'll be expanding on variables and functions later.
+Notice the use of quotes--single, double, or triple quotes are acceptable in Python. Just be consistent throughout your application! To keep things simple, we'll use double quotes and all of our variables will start with a lowercase letter for now. We'll be expanding on variables and functions later.
 
 >*Remember*: Once you close the interpreter, all of this data is lost.
 
@@ -194,12 +209,12 @@ Notice the use of quotes--single, double, or triple quotes are acceptable in Pyt
 
 There are two number data types in Python 3:
 
-- **integers**: Whole numbers with no decimal point (e.g. 1, 2, -504803).
+- **integers**: Whole numbers with no decimal point (e.g. 1, 2, -504803, 6238746289374692837649283764829).
 - **floats**: Written with a decimal point dividing the integer and fractional parts (e.g. .5, 842.32, .000238923).
 
 ### Math
 
-Math in Python looks a lot like math with a calculator.
+Math in Python looks a lot like math with a calculator. Type the following into the interpreter.
 
 #### Addition
 
@@ -237,10 +252,10 @@ Division uses the / symbol.
 
 > **Note**: If you’ve used Python 2, you’ll see that division works differently in Python 3. Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.
 
-To perform floor division in Python 3, use the following syntax:
+Try the following, one with one `/` and the other with two `//`:
 ```py
+>>> 16/5
 >>> 16//5
->>> 50//4
 ```
 
 #### Modulus
@@ -262,7 +277,7 @@ Order of operations works just like you learned in math class - Parentheses, Exp
 
 ## Booleans
 
-So far, the code we've written has been *unconditional*: no choice is getting made--all of the code runs. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. Booleans hold two values: `True` and `False`.
+So far, the code we've written has been *unconditional*: no choice is getting made--all of the code runs. Python has another data type called a **boolean** that is helpful when writing code that makes decisions. Booleans hold two values: `True` and `False`.
 
 Re-open the Python interpreter and try typing these:
 ```py
@@ -274,7 +289,7 @@ Re-open the Python interpreter and try typing these:
 >>> false
 ```
 
-You can test if Python objects are equal or unequal. The result is a boolean. Try typing these expressions in your Python console:
+You can use booleans to test if Python objects are equal or unequal. The result is a boolean. Try typing these expressions in your Python console (note that the double equals tests for equality):
 
 ```py
 >>> 0 == 0
@@ -282,15 +297,18 @@ You can test if Python objects are equal or unequal. The result is a boolean. Tr
 >>> 54 = 42
 ```
 
-Remember, use `==` to test for equality. Recall that `=` is used for assignment of a variable to a value. This is an important idea and can be a source of bugs until you get used to it: `=` is assignment, `==` is comparison.
+Use `==` to test for equality. Recall that `=` is used for assignment of a variable to a value. This is an important idea and can be a source of bugs until you get used to it: `=` is assignment, `==` is comparison.
 
-Use `!=` to test for inequality:
+To test for inequality, use `!=`:
 
 ```py
 >>> "a" != "a"
 >>> "a" != "A"
 ```
-`<`, `<=`, `>`, and `>=` have the same meaning as in math class. The result of these tests is a boolean:
+
+The above example demonstrates an important point: Python is CASE-SENSITIVE.
+
+Next, let's look at comparison operators. `<`, `<=`, `>`, and `>=` have the same meaning as in math class. The result of these tests is a boolean:
 
 ```py
 >>> 1 > 0
@@ -298,17 +316,17 @@ Use `!=` to test for inequality:
 >>> -1 < 0
 >>> .5 <= 1
 ```
-
-You can check for containment with the `in` keyword, which also results in a boolean:
+Finally, let's briefly look at membership operators. You can check for membership using the `in` keyword, which also results in a boolean:
 ```py
 >>> "H" in "Hello"
 >>> "X" in "Hello"
 ```
-Or check for a lack of containment with `not in`:
+Or check for a lack of membership with `not in`:
 ```py
 >>> "a" not in "abcde"
->>> "Chicago" not in "Philadelphia Python Workshop"
+>>> "Chicago" not in "Redmond Python Workshop"
 ```
+
 ## Operators
 
 We just introduced some operators that let us further manipulate our data. We've outlined some (not all) of the Python operators in the following tables:
@@ -398,23 +416,26 @@ Exercise:
 >>> a is b
 ```
 
-> **PAUSE**: Booleans and operators, combined with everything we've learned thus far, make up a large portion of what you will be doing as you start out with Python. Questions? Ask a TA!
+> **PAUSE HERE**: Booleans and operators, combined with everything we've learned thus far, make up a large portion of what you will be doing as you start out with Python. Any questions? Ask a TA!
 
 ## Conditional Branching
 
-Now that we know how to check if something is `True` or `False` using booleans and operators, we can use "conditional branching" to make Python execute commands on a conditional basis.
+### `if`
+
+Now that we know how to check if something is `True` or `False` using booleans and operators, we can use "conditional branching" to make Python execute commands on a conditional basis. Just take a look at the following code:
 
 ```py
 if 6 > 5:
      print("Six is greater than five!")
 ```
 
-This is the first piece of Python we've written that crosses multiple lines, and the way to enter it at a Python interpreter's prompt is a little different.
+This is the first piece of Python we've written that crosses multiple lines, and the way to enter it at a Python interpreter's prompt is a little different than single lines of code.
 
-1. Open the interpreter.
-2. Type `if 6 > 5:`, and hit `ENTER`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
-3. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `enter` to end the line.
-4. Finally, hit `enter` again to tell Python you are done with this code block. All together, it will look like this:
+In the interpreter:
+
+1. Type `if 6 > 5:`, and hit `ENTER`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
+2. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `ENTER` to end the line.
+3. Finally, hit `ENTER` again to tell Python you are done with this code block. All together, it will look like this:
 
 ```py
 >>> if 6 > 5:
@@ -422,9 +443,12 @@ This is the first piece of Python we've written that crosses multiple lines, and
 Six is greater than five!
 ```
 
-So what's going on here? When Python encounters the `if` keyword, it evaluates the expression following the keyword and before the colon. If that expression is `True`, Python executes the code in the indented code block under the `if` line. If that expression is `False`, Python skips over the code block.
+So what's going on here? When Python encounters the `if` keyword, it evaluates the expression following the keyword and before the colon.
 
-In this case, because 6 really is greater than 5, Python executes the code block under the if statement, and we see "Six is greater than five!" printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:
+  - If that expression evaluates to `True`, Python executes the code in the indented code block under the `if` line.
+  - If that expression evaluates to `False`, Python skips over the code block.
+
+In this case, because "6 is greater than 5" evaluates to true, Python executes the code block under the if statement, and we see "Six is greater than five!" printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:
 
 ```py
 >>> if 0 > 2:
@@ -435,8 +459,13 @@ Another:
 >>> if "banana" in "bananarama":
 ...    print("I miss the 80s.")
 ```
+One more:
+```py
+>>> if "Ringo" not in "John, Paul, and George":
+...    print("Ringo wasn't much of a songwriter.")
+```
 
-**more choices: if and else**
+### `if` and `else`
 
 You can use the `else` keyword to execute code only when the `if` expression isn't `True`:
 
@@ -451,7 +480,7 @@ You can use the `else` keyword to execute code only when the `if` expression isn
 
 Like with `if`, the code block under the `else` statement must be indented so Python knows that it is a part of the `else` block.
 
-**compound conditionals: `and` and `or`**
+### `and` and `or`
 
 We've been testing single conditions, but we can also test multiple conditions that result in execution of some code. You can check multiple expressions together using the `and` and `or` logical operators.
 
@@ -488,7 +517,7 @@ One more:
 
 You can have as many lines of code as you want in if-else block, just make sure to indent them so Python knows they are a part of the block.
 
-**even more choices: elif and else**
+## `elif` and `else`
 
 If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if. You can have as many `elif` cases as you want. Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
 
@@ -515,7 +544,7 @@ You don't have to have an `else` block if you don't need it. That just means the
 ...    print("Valentine's Day color!")
 ```
 
-If color had been "purple", that code wouldn't have printed anything. Remember that `=` is for assignment and `==` is for comparison.
+If `color` had been "purple", the code wouldn't have printed anything. Remember that `=` is for assignment and `==` is for comparison.
 
 ## Functions
 
@@ -527,56 +556,52 @@ Try the following:
 >>> b = 3
 >>> type(a)
 >>> type(b)
->>> print(str, a)
 ```
 
-We can pass multiple "arguments" to our functions as shown above. For now, remember that there are three kinds of functions:
+The values between the `()` brackets are called "arguments." Certain functions let us pass arguments to our functions. like so:
+```py
+>>> str1 = "Bill is"
+>>> a = 50
+>>> str2 = "years old."
+>>> print(str1, a, str2)
+```
+There are three basic categories of functions:
 
-- The built-in kind that come with Python (e.g.`print()`)
-- The kind we write
+- The built-in kind that come with Python when we install it (e.g.`print()`)
+- The kind we write ourselves
 - The kind that other people wrote that we can borrow (by importing their code modules and using them in our programs)
+
+We've introduced the built-in kind. Now we'll show you how to write your own. Later, we'll show you how to import and use functions written by other people.
 
 ### Writing Our Own Function
 
+In the interpreter, write the following code:
 ```py
 >>> def myFirstFunction():
 ...     print("Hello!")
 ```
-
-We just wrote our first function. Now call it:
+We just wrote our first function! Now call it:
 ```py
 >>> myFirstFunction()
 ```
-Our function takes no arguments. Let's write one that passes an argument:
-
+Our function takes no arguments. Let's write a function that passes an argument:
 ```py
 >>> def mySecondFunction(name):
 ...     print("Hello", name)
 ```
-Now let's run it:
+Now let's run it, passing in the name of your choice:
 ```py
->>> mySecondFunction("Steven")
+>>> mySecondFunction("Bill Gates")
 ```
-
-Fantastic! You just called a function and passed an argument.
+Fantastic! You just authored and called your first function that passed an argument.
 
 ### Utility Functions
 
-We'll gradually expand your knowledge of functions, but for now we'll introduce a few cool functions that can help us with numerical types and strings.
+We'll gradually expand your knowledge of functions, but for now we'll introduce a few other built-in functions that can help us with numerical types and strings.
 
 #### For Numbers
 
-We can convert between numerical types with ease:
-
-Converts 5.0 to 5:
-```py
->>> int(5.0)
-```
-Converts 4 to 4.0:
-```py
->>> float(4)
-```
-As shown above, we can use the built-in `type()` function to determine the type of a given variable.
+We can convert between numerical types with ease.
 
 Convert from float to int:
 ```py
@@ -608,6 +633,8 @@ Convert from int to float:
 
 ## Additional Concepts
 
+Let's briefly introduce some additional concepts and tools that will help you on your journey with Python.
+
 ### Tracebacks
 
 When you make a mistake and try to run your program, Python will generate a traceback to tell you what went wrong. By now, you may have seen a few of these!
@@ -635,7 +662,7 @@ Tracebacks are invaluable when trying to diagnose why something won't run.
 
 ### Comments
 
-Comments help us communicate with teammates about what our functions are doing. We'll use them more when we start running applications in Python files. For now, just know that when you see the following syntax, it's a comment.
+Comments help us communicate with teammates about what our functions are doing. We'll use them more when we start running applications in Python files. For now, just know that when you see the following syntax, it's a comment. There's no need to enter the code below, just familiarize yourself with the concepts.
 
 Single line comment:
 ```py
@@ -659,12 +686,19 @@ name = "Your Name"
 print(name)
 print("Your Name")
 ```
-### TBD
 
-# Additional Resources
+## Additional Resources
+
+There is no shortage of additional resources on Python. It helps to read multiple articles and tutorials on the core concepts mentioned above, so we encourage you to read and explore the following:
 
 - [Python Guide for Beginners - Non-Programmers](https://wiki.python.org/moin/BeginnersGuide/NonProgrammers)
 - [Python Guide for Beginners - Programmers](https://wiki.python.org/moin/BeginnersGuide/Programmers)
+
+### Coding Exercises
+
 - [Coding Bat](https://www.codingbat.com/python)
 - [Hacker Rank](https://hackerrank.com)
+
+### Other Tools
+
 - [Try Git](https://www.codeschool.com/courses/try-git)
