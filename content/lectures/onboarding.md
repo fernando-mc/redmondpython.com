@@ -157,7 +157,7 @@ Let's do some basic operations in Python to teach you how to interact with the P
   This is how easy it is to interact with the interpreter. This also introduces you to some basic math operations available to you in Python like addition, subtraction, etc. We'll expand on this later.
 
   Now try these:
-  ```
+  ```py
   >>> 2+4
   >>> 5-1
   >>> 3*4
@@ -170,7 +170,7 @@ Let's do some basic operations in Python to teach you how to interact with the P
 Let's introduce variables. Variables are used to store values--numbers, text, lists, etc., so that we can reference these variables later in our application.
 
 Let's create a few variables that store some simple numbers. We'll use the `=` symbol as our assignment operator.
-```
+```py
 >>> x = 4
 >>> y = 2
 >>> print(x + y)
@@ -178,7 +178,7 @@ Let's create a few variables that store some simple numbers. We'll use the `=` s
 Above, we assigned the number 4 to the variable "x" and the number 2 to "y". We then called the "print" function to print the sum. Note that we don't have to declare our variables as "integers." Python will assign the type automatically when we run our program ("at runtime").
 
 Numbers are great, but try entering some strings of text, replacing your name below:
-```
+```py
 >>> name = "Your Name"
 >>> print(name)
 >>> fav_food = 'Pasta'
@@ -203,7 +203,7 @@ Math in Python looks a lot like math with a calculator.
 
 #### Addition
 
-```
+```py
 >>> 2 + 2
 >>> 1.65 + 2.15
 >>> 2 + 1.65
@@ -211,7 +211,7 @@ Math in Python looks a lot like math with a calculator.
 
 #### Subtraction
 
-```
+```py
 >>> 12 - 5
 >>> 45.9 - 25.3
 >>> 2 - -4
@@ -220,7 +220,7 @@ Math in Python looks a lot like math with a calculator.
 #### Multiplication
 
 Multiplication uses the * (asterisk or star) symbol.
-```
+```py
 >>> 6 * 7
 >>> 5.6 * 4.3
 >>> 6 * -5
@@ -229,7 +229,7 @@ Multiplication uses the * (asterisk or star) symbol.
 #### Division
 
 Division uses the / symbol.
-```
+```py
 >>> 12/3
 >>> 16/5
 >>> 10/-5
@@ -238,7 +238,7 @@ Division uses the / symbol.
 > **Note**: If you’ve used Python 2, you’ll see that division works differently in Python 3. Python 2 uses floor division for integers, meaning it will return only the whole number part of the answer. Python 3 performs true division, returning the real or true value of the division.
 
 To perform floor division in Python 3, use the following syntax:
-```
+```py
 >>> 16//5
 >>> 50//4
 ```
@@ -246,7 +246,7 @@ To perform floor division in Python 3, use the following syntax:
 #### Modulus
 
 Thinking back to long division that you may have learned in school, the modulus is the “remainder” after performing division. It uses the % symbol.
-```
+```py
 >>> 16%5
 >>> 50%4
 ```
@@ -254,7 +254,7 @@ Thinking back to long division that you may have learned in school, the modulus 
 #### Order of Operations
 
 Order of operations works just like you learned in math class - Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.
-```
+```py
 >>> 5 + 4 * 3
 >>> (5 + 4) * 3
 ```
@@ -265,7 +265,7 @@ Order of operations works just like you learned in math class - Parentheses, Exp
 So far, the code we've written has been *unconditional*: no choice is getting made--all of the code runs. Python has another data type called a **boolean** that is helpful for writing code that makes decisions. Booleans hold two values: `True` and `False`.
 
 Re-open the Python interpreter and try typing these:
-
+```py
 >>> True
 >>> type(True)
 >>> False
@@ -276,7 +276,7 @@ Re-open the Python interpreter and try typing these:
 
 You can test if Python objects are equal or unequal. The result is a boolean. Try typing these expressions in your Python console:
 
-```
+```py
 >>> 0 == 0
 >>> 1 == 0
 >>> 54 = 42
@@ -286,13 +286,13 @@ Remember, use `==` to test for equality. Recall that `=` is used for assignment 
 
 Use `!=` to test for inequality:
 
-```
+```py
 >>> "a" != "a"
 >>> "a" != "A"
 ```
 `<`, `<=`, `>`, and `>=` have the same meaning as in math class. The result of these tests is a boolean:
 
-```
+```py
 >>> 1 > 0
 >>> 2 >= 3
 >>> -1 < 0
@@ -300,12 +300,12 @@ Use `!=` to test for inequality:
 ```
 
 You can check for containment with the `in` keyword, which also results in a boolean:
-```
+```py
 >>> "H" in "Hello"
 >>> "X" in "Hello"
 ```
 Or check for a lack of containment with `not in`:
-```
+```py
 >>> "a" not in "abcde"
 >>> "Chicago" not in "Philadelphia Python Workshop"
 ```
@@ -327,7 +327,7 @@ We just introduced some operators that let us further manipulate our data. We've
 |`//=` Floor Division|Performs floor division on operators and assign value to the left operand |`c //= a` is equivalent to `c = c // a`|
 
 Exercise:
-```
+```py
 >>> a = 21
 >>> b = 10
 >>> c = 0
@@ -364,7 +364,7 @@ Assume `a = 5` and `b = 10`.
 > **Key Point**: `=` assigns a value, and `==` tests for equality.
 
 Exercise:
-```
+```py
 >>> a = 5
 >>> b = 10
 >>> a == b
@@ -390,7 +390,7 @@ Exercise:
 |`is not`|Evaluates to false if the variables on either side of the operator point to the same object.|See below.|
 
 Exercise:
-```
+```py
 >>> a = 1
 >>> b = 1
 >>> a is b
@@ -404,7 +404,7 @@ Exercise:
 
 Now that we know how to check if something is `True` or `False` using booleans and operators, we can use "conditional branching" to make Python execute commands on a conditional basis.
 
-```
+```py
 if 6 > 5:
      print("Six is greater than five!")
 ```
@@ -416,7 +416,7 @@ This is the first piece of Python we've written that crosses multiple lines, and
 3. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `enter` to end the line.
 4. Finally, hit `enter` again to tell Python you are done with this code block. All together, it will look like this:
 
-```
+```py
 >>> if 6 > 5:
 ...      print("Six is greater than five!")
 Six is greater than five!
@@ -426,12 +426,12 @@ So what's going on here? When Python encounters the `if` keyword, it evaluates t
 
 In this case, because 6 really is greater than 5, Python executes the code block under the if statement, and we see "Six is greater than five!" printed to the screen. Guess what will happen with these other expressions, then type them out and see if your guess was correct:
 
-```
+```py
 >>> if 0 > 2:
 ...     print("Zero is greater than two!")
 ```
 Another:
-```
+```py
 >>> if "banana" in "bananarama":
 ...    print("I miss the 80s.")
 ```
@@ -440,7 +440,7 @@ Another:
 
 You can use the `else` keyword to execute code only when the `if` expression isn't `True`:
 
-```
+```py
 >>> sister_age = 15
 >>> brother_age = 12
 >>> if sister_age > brother_age:
@@ -460,7 +460,7 @@ We've been testing single conditions, but we can also test multiple conditions t
 
 Try typing these out and see what you get:
 
-```
+```py
 >>> 1 > 0 and 1 < 2
 >>> 1 < 2 and "x" in "abc"
 >>> "a" in "hello" or "e" in "hello"
@@ -468,7 +468,7 @@ Try typing these out and see what you get:
 
 Guess what will happen when you enter these next two examples, and then type them out and see if you are correct. If you have trouble with the indenting, call over a staff member and practice together. It is important to be comfortable with indenting. Indenting is a crucial part of the syntax of Python.
 
-```
+```py
 >>> temperature = 32
 >>> if temperature > 60 and temperature < 75:
 ...    print("It's nice and cozy in here!")
@@ -476,7 +476,7 @@ Guess what will happen when you enter these next two examples, and then type the
 ....    print("Too extreme for me.")
 ```
 One more:
-```
+```py
 >>> hour = 11
 >>> if hour < 7 or hour > 23:
 ...    print("Go away!")
@@ -492,7 +492,7 @@ You can have as many lines of code as you want in if-else block, just make sure 
 
 If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if. You can have as many `elif` cases as you want. Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
 
-```
+```py
 >>> sister_age = 15
 >>> brother_age = 12
 >>> if sister_age > brother_age:
@@ -505,7 +505,7 @@ If you have more than two cases, you can use the `elif` keyword to check more ca
 
 You don't have to have an `else` block if you don't need it. That just means there isn't default code to execute when none of the `if` or `elif`conditions are `True`:
 
-```
+```py
 >>> color = "orange"
 ... if color == "green" or color == "red":
 ...    print("Christmas color!")
@@ -522,7 +522,7 @@ If color had been "purple", that code wouldn't have printed anything. Remember t
 Functions are how we perform actions on our data. We've been using a function a lot so far: `print()`. Calling a function is as easy as calling the function name and putting a variable or value between round brackets like we've been doing.
 
 Try the following:
-```
+```py
 >>> a = "The number 3: "
 >>> b = 3
 >>> type(a)
@@ -538,23 +538,23 @@ We can pass multiple "arguments" to our functions as shown above. For now, remem
 
 ### Writing Our Own Function
 
-```
+```py
 >>> def myFirstFunction():
 ...     print("Hello!")
 ```
 
 We just wrote our first function. Now call it:
-```
+```py
 >>> myFirstFunction()
 ```
 Our function takes no arguments. Let's write one that passes an argument:
 
-```
+```py
 >>> def mySecondFunction(name):
 ...     print("Hello", name)
 ```
 Now let's run it:
-```
+```py
 >>> mySecondFunction("Steven")
 ```
 
@@ -569,17 +569,17 @@ We'll gradually expand your knowledge of functions, but for now we'll introduce 
 We can convert between numerical types with ease:
 
 Converts 5.0 to 5:
-```
+```py
 >>> int(5.0)
 ```
 Converts 4 to 4.0:
-```
+```py
 >>> float(4)
 ```
 As shown above, we can use the built-in `type()` function to determine the type of a given variable.
 
 Convert from float to int:
-```
+```py
 >>> x = 5.5
 >>> x
 >>> type(x)
@@ -588,7 +588,7 @@ Convert from float to int:
 >>> type(x)
 ```
 Convert from int to float:
-```
+```py
 >>> y = 4
 >>> y
 >>> type(y)
@@ -599,7 +599,7 @@ Convert from int to float:
 #### For Strings
 
 `upper()` and `lower()` are handy:
-```
+```py
 >>> str = "my string"
 >>> str.upper()
 >>> str2 = "MY STRING"
