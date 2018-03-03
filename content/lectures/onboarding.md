@@ -517,7 +517,7 @@ One more:
 
 You can have as many lines of code as you want in if-else block, just make sure to indent them so Python knows they are a part of the block.
 
-## `elif` and `else`
+### `elif` and `else`
 
 If you have more than two cases, you can use the `elif` keyword to check more cases. Think of `elif` as Python-speak for else if. You can have as many `elif` cases as you want. Python will go down the code checking each `elif` until it finds a `True` condition or reaches the default `else` block.
 
@@ -556,6 +556,7 @@ Try the following:
 >>> b = 3
 >>> type(a)
 >>> type(b)
+>>> print(a, b)
 ```
 
 The values between the `()` brackets are called "arguments." Certain functions let us pass arguments to our functions. like so:
@@ -571,7 +572,7 @@ There are three basic categories of functions:
 - The kind we write ourselves
 - The kind that other people wrote that we can borrow (by importing their code modules and using them in our programs)
 
-We've introduced the built-in kind. Now we'll show you how to write your own. Later, we'll show you how to import and use functions written by other people.
+We've already introduced the built-in kind. Next, we'll show you how to write your own. Later, we'll show you how to import and use functions written by other people.
 
 ### Writing Our Own Function
 
@@ -625,10 +626,9 @@ Convert from int to float:
 
 `upper()` and `lower()` are handy:
 ```py
->>> str = "my string"
+>>> str = "My String"
 >>> str.upper()
->>> str2 = "MY STRING"
->>> str2.lower()
+>>> str.lower()
 ```
 
 ## Additional Concepts
