@@ -445,7 +445,7 @@ You can use the `else` keyword to execute code only when the `if` expression isn
 >>> brother_age = 12
 >>> if sister_age > brother_age:
 ...    print("sister is older")
-...else:
+... else:
 ...    print("brother is older")
 ```
 
@@ -465,7 +465,7 @@ Try typing these out and see what you get:
 >>> 1 < 2 and "x" in "abc"
 >>> "a" in "hello" or "e" in "hello"
 >>> 1 <= 0 or "a" not in "abc"
-
+```
 Guess what will happen when you enter these next two examples, and then type them out and see if you are correct. If you have trouble with the indenting, call over a staff member and practice together. It is important to be comfortable with indenting. Indenting is a crucial part of the syntax of Python.
 
 ```py
@@ -558,7 +558,7 @@ Now let's run it:
 >>> mySecondFunction("Steven")
 ```
 
-You just called a function and passed an argument.
+Fantastic! You just called a function and passed an argument.
 
 ### Utility Functions
 
