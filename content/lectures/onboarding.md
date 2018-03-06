@@ -79,14 +79,16 @@ In fact, you might already have one of these versions installed on your computer
 1. Open a terminal or command prompt.
     - WIN: Start Menu > Command Prompt.
     - MAC/LIN: Application > Terminal.
-2. Type `python` and hit **ENTER**. Do you see something like this? It means you have Python installed on your computer.
+2. Type `python` and hit **ENTER**. Do you see something like this? It means you have Python 3 installed on your computer.
     ```bash
     Python 3.6.4 (default, Jan  3 2018, 12:27:09)
     [GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
     ```
-If you get an error, you probably need to install Python. Note that you may have Python 2 installed, in which case you'll want to install Python 3. See the following pages for platform-specific instructions on installing Python:
+If you get an error, you probably need to install Python. Note that you may have Python 2 installed (it will say `Python 2.x.x`), in which case you'll want to install Python 3.
+
+See the following pages for platform-specific instructions on installing Python:
 
 - [Windows](/setupwindows)
 - [MacOS](/setupmac/)
@@ -434,7 +436,7 @@ This is the first piece of Python we've written that crosses multiple lines, and
 In the interpreter:
 
 1. Type `if 6 > 5:`, and hit `ENTER`. The next line will have `...` as a prompt, instead of the usual `>>>`. This is Python telling us that we are in the middle of a code block, and so long as we indent our code it should be a part of this code block.
-2. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `ENTER` to end the line.
+2. Type 4 spaces, type `print("Six is greater than five!")`, and then hit `ENTER` to end the line. Note that spaces are [officially the preferred indentation method](https://www.python.org/dev/peps/pep-0008/#tabs-or-spaces).
 3. Finally, hit `ENTER` again to tell Python you are done with this code block. All together, it will look like this:
 
 ```py
