@@ -30,6 +30,9 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 [[menu.sidebar]]
   name = "6. Contributing to Redmondpython.com"
   url = "/contributing"
+[[menu.sidebar]]
+  name = "7. Python Onboarding"
+  url = "/lectures/onboarding"
 
 [[menu.navbar]]
   name = "Machine Setup"
