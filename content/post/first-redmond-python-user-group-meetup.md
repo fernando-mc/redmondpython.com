@@ -31,13 +31,13 @@ First lets get your [machine setup to program with Python](/setup)
 
 Once you have gotten the tools ready you can go through:
 
-Meetup Founder (and a python ninja) [Fernandos](/https://github.com/fernando-mc) excellent self paced learning workshop for python.
+Meetup Founder (and a python ninja) [Fernandos](https://github.com/fernando-mc) excellent self paced learning workshop for python.
 The module is divided into 2 parts
 
 - Starting from the very basics [Day One](/day_one_lesson) 
 - Building up on the concepts in [Day Two](/day_two_lesson)
 
-Alternatively you can look at [Nick's](/https://github.com/mkpt) sharp and concise [take on the basics](/lectures/onboarding)
+Alternatively you can look at [Nick's](https://github.com/mkpt) sharp and concise [take on the basics](/lectures/onboarding)
 
 After getting your hands a little dirty with python, go ahead and go through our [learning resources](/practice)
 
