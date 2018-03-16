@@ -6,7 +6,7 @@ Yay! We are gald to have you join our community of python enthusiasts in Redmond
 
 
 **For anyone joining us, here's what we do!**
-
+ 
 
 <!--more-->
 
@@ -54,4 +54,4 @@ After getting your hands a little dirty with python, go ahead and go through our
 **Contributing to the group** 
 
 - We always welcome snacks, open discussions and an interactive and active participation
-- If you have any ideas for space for holding the meetup. Please let us know. 
+- If you have any ideas for space for holding the meetup. Please let us know.  
