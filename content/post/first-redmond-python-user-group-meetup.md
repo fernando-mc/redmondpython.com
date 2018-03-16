@@ -13,6 +13,7 @@ Yay! We are gald to have you join our community of python enthusiasts in Redmond
 1. We start by getting to know one another a little bit. 
 2. The general structure of our meetup consists of the following:
 
+
 	i.   A brief talk or presentation on a python topic by a member/organizer
 
 	ii.  Then, for the majority of the night, we break out into groups of relative skill levels to learn Python! 
