@@ -15,7 +15,7 @@ This page will teach you the following:
 At this point, you have three choices:
 
 |Experience Level|Recommendation
-|:---:|---|
+|:---:|---| 
 |"I'm brand new to development and Python."|Come to the meetup for a guided on-boarding session with our TAs where you can complete this page and ask questions as you go.|
 |"I'm new to Python but I have some programming experience."|Feel free to get as far as you can on this page and come to the meetup with questions, or you can come to the meetup and do an on-boarding session with our TAs.|
 |"I'm an experience developer"|Feel free to go through this page on your own and come to the meetup with any questions|
