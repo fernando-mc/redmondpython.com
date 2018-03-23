@@ -43,9 +43,6 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 [[menu.navbar]]
   name = "Short Workshop"
   url = "/short_workshop"
-[[menu.navbar]]
-  name = "Talks and Seminars"
-  url = "/talk_archive"
 
 
 # custom navbar menu entry.   See the custom_navbar parameter below for
