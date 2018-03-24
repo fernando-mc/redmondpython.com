@@ -37,7 +37,7 @@ The module is divided into 2 parts
 - Starting from the very basics [Day one](/day_one_lesson) 
 - Building up on the concepts in [Day Two](/day_two_lesson)
 
-Alternatively, you can look at [Nicks'](https://github.com/mkpt) sharp and concise [take on the basics](/lectures/onboarding
+Alternatively, you can look at [Nicks'](https://github.com/mkpt) sharp and concise [take on the basics](/lectures/onboarding)
 First lets get your [machine setup to program with Python](/setup)
 
 
