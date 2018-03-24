@@ -27,4 +27,6 @@ You can build powerful web applications with Python and have a good time doing s
 
 [Lecture Slides and Introductory Code](https://github.com/mkpt/flask-api)
 
--RedmondPython is open to any member who wants to do a quick walkthrough and introduction of your favorite library, framework, python principles and anything pythonic. Please talk to the organizers if you are interested. 
+-RedmondPython is open to any member who wants to do a quick walkthrough and introduction of your favorite library, framework, python principles and anything pythonic. Get connected at [Slack](redmondpython.slack.com) or talk to the organizers if you are interested. 
+
+
