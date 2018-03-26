@@ -1,5 +1,12 @@
 ---
 title: "Redmond Python User Group Meetup"
+date: 
+description: "A quick introduction to the Redmond Python User Group"
+tags: [ "Redmond", "Python" ]
+lastmod: 2018-03-25
+date: "2018-03-24"
+categories:
+  - "Python"
 ---
 
 
@@ -13,13 +20,13 @@ Yay! We are gald to have you join our community of python enthusiasts in Redmond
 1. We start by getting to know one another a little bit. 
 2. The general structure of our meetup consists of the following:
 
-	i.   A brief talk or presentation on a python topic by a member/organizer
+    i.   A brief talk or presentation on a python topic by a member/organizer
 
 
-	ii.  Then, for the majority of the night, we break out into groups of relative skill levels to learn Python! 
-	
+    ii.  Then, for the majority of the night, we break out into groups of relative skill levels to learn Python! 
+    
 
-	iii. The organizers and the TAs help the members along the way. 
+    iii. The organizers and the TAs help the members along the way. 
 
 The aim is to create a conducive environment for python programming enthusiasts to come share their knowledge, learn and grow. 
 
