@@ -43,7 +43,7 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 [[menu.navbar]]
   name = "Short Workshop"
   url = "/short_workshop"
- [[menu.navbar]]
+[[menu.navbar]]
   name = "Talks and Seminars"
   url = "/talk_archive"
 
