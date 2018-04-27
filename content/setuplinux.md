@@ -121,7 +121,7 @@ You've practiced using dir and cd to navigate your computer's filesystem from th
 
 # Start learning Python!
 
-Go through this [self-directed tutorial](/day_one_tutorial/) to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.
+Go through this [self-directed tutorial](/day_one_lesson/) to start learning to read and write in Python. These concepts will be reviewed in the day two lesson, along with some more advanced topics.
 
 # Get dependencies installed for the projects
 
