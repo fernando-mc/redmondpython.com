@@ -1,6 +1,5 @@
 ---
 title: "Redmond Python User Group Meetup"
-date: 
 description: "A quick introduction to the Redmond Python User Group"
 tags: [ "Redmond", "Python" ]
 lastmod: 2018-03-25
