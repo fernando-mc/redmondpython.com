@@ -52,7 +52,7 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 # details.
 
 [params]
-  author = "Fernando Medina Corey"
+  author = "Redmond Python Organizers"
   description = "The Python User Group of Redmond, WA"
   date_format = "Mon Jan 02, 2006"
   custom_navbar = true
