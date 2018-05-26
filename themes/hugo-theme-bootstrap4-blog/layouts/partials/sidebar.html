@@ -7,19 +7,19 @@
   {{ end }}
 
   {{ if .Site.Params.sidebar }}
-      {{ partialCached "recent.html" .}}
+      {{ partialCached "recent.html" . }}
   {{ end }}
 
-  {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
     <h4>{{ i18n "links" }}</h4>
     <ol class="list-unstyled">
-      {{ range . }}
-      <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+      {{ $currentURL := .URL | absLangURL }}
+      {{ range .Site.Menus.sidebar }}
+      {{ $menuURL := .URL | absLangURL }}
+      <li><a class="{{ if eq $menuURL $currentURL }}font-weight-bold{{ end }}" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
       {{ end }}
     </ol>
   </section>
-  {{ end }}
 </aside><!-- /.blog-sidebar -->
 
 {{- /* vim: set ts=2 sw=2 et: */}}

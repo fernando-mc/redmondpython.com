@@ -14,48 +14,44 @@ copyright = "This workshop was initially created by [Philly's Python User Group]
 
 [[menu.sidebar]]
   name = "1. Machine Setup Steps"
-  url = "/setup"
+  url = "/setup/"
 [[menu.sidebar]]
   name = "2. Practice"
-  url = "/practice"
+  url = "/practice/"
 [[menu.sidebar]]
   name = "3. Projects"
-  url = "/projects"
+  url = "/projects/"
 [[menu.sidebar]]
   name = "4. Full Workshop - Day 1"
-  url = "/day_one_lesson"
+  url = "/day_one_lesson/"
 [[menu.sidebar]]
   name = "5. Full Workshop - Day 2"
-  url = "/day_two_lesson"
+  url = "/day_two_lesson/"
 [[menu.sidebar]]
   name = "6. Contributing to Redmondpython.com"
-  url = "/contributing"
+  url = "/contributing/"
 [[menu.sidebar]]
   name = "7. Python Onboarding"
-  url = "/lectures/onboarding"
+  url = "/lectures/onboarding/"
 
 [[menu.navbar]]
   name = "Machine Setup"
-  url = "/setup"
+  url = "/setup/"
 [[menu.navbar]]
   name = "2-Day Workshop"
-  url = "/day_one_lesson"
+  url = "/day_one_lesson/"
 [[menu.navbar]]
   name = "Short Workshop"
-  url = "/short_workshop"
+  url = "/short_workshop/"
 [[menu.navbar]]
   name = "Talks and Seminars"
-  url = "/talk_archive"
+  url = "/talk_archive/"
 
-
-# custom navbar menu entry.   See the custom_navbar parameter below for
-# details.
 
 [params]
   author = "Redmond Python Organizers"
   description = "The Python User Group of Redmond, WA"
   date_format = "Mon Jan 02, 2006"
-  custom_navbar = true
 
   # Disable the use of sub-resource integrity on CSS/JS assets
   # Useful if you're using a CDN or other host where you can't control cache headers
